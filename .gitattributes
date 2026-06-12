@@ -1,0 +1,13 @@
+*.jld2 binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pptx binary
+
+*.jl text
+*.md text
+*.tex text
+*.toml text
+*.tsv text
+*.txt text
