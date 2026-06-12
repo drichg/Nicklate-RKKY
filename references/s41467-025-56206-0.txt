@@ -1,0 +1,720 @@
+                                    Article                                                                                                 https://doi.org/10.1038/s41467-025-56206-0
+
+
+                                    Sensitive dependence of pairing symmetry
+                                    on Ni-eg crystal ﬁeld splitting in the nickelate
+                                    superconductor La3Ni2O7
+                                    Received: 10 July 2024                             Chengliang Xia1,4, Hongquan Liu1,2,4, Shengjie Zhou1 & Hanghui Chen                      1,3
+
+
+                                    Accepted: 9 January 2025
+
+                                                                                       The discovery of high-temperature superconductivity in La3Ni2O7 under
+                                                                                       pressure has drawn great attention. However, consensus has not been reached
+                                        Check for updates
+                                                                                       on its pairing symmetry in theory. By combining density-functional-theory
+                  1234567890():,;
+1234567890():,;
+
+
+
+
+                                                                                       (DFT), maximally-localized-Wannier-function, and linearized gap equation
+                                                                                       with random-phase-approximation, we ﬁnd that the pairing symmetry of
+                                                                                       La3Ni2O7 is dxy, if its DFT band structure is accurately reproduced by a
+                                                                                       downfolded bilayer two-orbital model. More importantly, we reveal that the
+                                                                                       pairing symmetry of La3Ni2O7 sensitively depends on the crystal ﬁeld splitting
+                                                                                       between two Ni-eg orbitals. A slight increase in Ni-eg crystal ﬁeld splitting alters
+                                                                                       the pairing symmetry from dxy to s±. Such a transition is associated with the
+                                                                                       change in inverse Fermi velocity and susceptibility, while the shape of Fermi
+                                                                                       surface remains almost unchanged. Our work highlights the sensitive depen-
+                                                                                       dence of pairing symmetry on low-energy electronic structures in multi-orbital
+                                                                                       superconductors, which calls for care in the downfolding procedure when one
+                                                                                       calculates their pairing symmetry.
+
+
+                                    The recent discovery of superconductivity in La3Ni2O7 under pressure               In this work, we combine density-functional-theory (DFT)70,71,
+                                    has drawn great attention1–54. It not only adds a new member to the          maximally-localized-Wannier-function (MLWF)72,73, and linearized gap
+                                    family of nickelate superconductors55–63 but also substantially increa-      equation calculations with random-phase-approximation (RPA)74–79 to
+                                    ses the transition temperature to near 80 K1. Under a pressure above 19      study the superconducting pairing symmetry of tetragonal La3Ni2O7
+                                    GPa, La3Ni2O7 transforms from an orthorhombic structure (space               by downfolding the DFT band structure to a bilayer two-orbital model.
+                                    group Amam) to a tetragonal structure (space group I4/mmm) at                We ﬁnd that the leading superconducting instability of La3Ni2O7 has
+                                    low temperatures45,54. Extensive density-functional-theory (DFT)             dxy symmetry, if its DFT band structure is accurately reproduced by the
+                                    calculations ﬁnd that the Fermi surface of tetragonal La3Ni2O7               downfolded model and the interaction strengths are in a physically
+                                    has three Fermi sheets that are derived from two Ni-eg orbitals4,7–9.        reasonable range. More importantly, we show that a slight increase in
+                                    This is different from the well-known single-orbital Fermi surface           the crystal ﬁeld splitting between two Ni-eg orbitals (<0.2 eV) changes
+                                    of cuprate superconductors64–66. Based on this low-energy elec-              the pairing symmetry from dxy to s±. We elucidate that such a transition
+                                    tronic structure, a number of studies use many-body methods                  is associated with the change in inverse Fermi velocity and suscept-
+                                    and propose different mechanisms for the superconductivity                   ibility, while the shape of Fermi surface remains almost unchanged.
+                                    found in La3Ni2O7. Yet no consensus has been reached so far on               Our work highlights the sensitive dependence of La3Ni2O7 pairing
+                                    the most favorable pairing symmetry of La3Ni2O7–a central                    symmetry on Ni-eg crystal ﬁeld splitting, which provides one source of
+                                    property of unconventional superconductivity. Refs. 5–12,29 ﬁnd              discrepancy in the pairing symmetry reported in the literature. Such
+                                    s± symmetry (group theory notation A1g), reminiscent of iron-                sensitivity calls for care in the procedure of downfolding DFT band
+                                    based superconductors67–69, while Refs. 13,16–20 obtain dxy (B2g)            structure to low-energy effective models when one calculates the
+                                    or d x 2 y2 (B1g) symmetry.                                                 pairing symmetry of multi-orbital superconductors.
+
+
+                                    1
+                                    NYU-ECNU Institute of Physics, NYU Shanghai, Shanghai, China. 2Department of Physics, Brown University, Providence, RI, USA. 3Department of Physics, New
+                                    York University, New York, NY, USA. 4These authors contributed equally: Chengliang Xia, Hongquan Liu.     e-mail: hanghui.chen@nyu.edu
+
+
+                                    Nature Communications | (2025)16:1054                                                                                                                 1
+Article                                                                                                            https://doi.org/10.1038/s41467-025-56206-0
+
+
+      We perform DFT calculations, as implemented in the Vienna ab                     α, β, and γ. The α and β sheets are mainly derived from Ni-d x2 y2 orbital,
+initio simulation package (VASP)80,81. We use MLWF to do the down-                     while the γ sheet dominantly consists of Ni-d 3z 2 r 2 (see Supplementary
+folding from DFT band structure82 and obtain a bilayer two-orbital                     Note 4). We use green color to indicate the magnitude of inverse Fermi
+model for subsequent linearized gap equation calculations. We refer to                 velocity ∣vF(k)∣−1. The γ sheet has a large inverse Fermi velocity, while
+our bilayer two-orbital model as Wannier’s model. For comparison, we                   the inverse Fermi velocity of the α and β sheets is substantially smaller.
+also study another bilayer two-orbital model4, referred to as Luo’s                    Next, we switch to Luo’s model for comparison. Figure 1d shows the
+model in this study, which is widely used to study the superconducting                 band structure of Luo’s model, which overlays the DFT band structure
+pairing symmetry of La3Ni2O7 in literature. Wannier’s model and Luo’s                  of La3Ni2O7. Luo’s model also reasonably reproduces the four Ni-eg-
+model have the same bases: (Ni1-d 3z 2 r 2 , Ni1-d x2 y2 , Ni2-d 3z 2 r 2 , Ni2-    derived bands around the Fermi level. The minor difference in the
+d x2 y2 ) where 1 and 2 label different NiO2 layers. The difference                   band structure between DFT and Luo’ model is probably due to the
+between the two models is that Wannier’s model takes into account all                  fact that Luo’s model only takes into account the nearest and second
+the hoppings between different orbitals, while Luo’s model only                        nearest hoppings4, while DFT (as well as Wannier’s model) includes all
+includes nearest and second-nearest hoppings. Thus the two models                      the long-range hoppings. However, the Fermi surface of Luo’s model is
+have slightly different Ni-eg crystal ﬁeld splitting and hopping para-                 very similar to that of Wannier’s model, as shown in Fig. 1e. We ﬁnd that
+meters (see Supplementary Note 3). We use RPA to treat the local                       in Luo’s model, the inverse Fermi velocity of the γ sheet is slightly
+Hubbard interaction on Ni-eg orbitals in the Slater-Kanamori form83                    larger than that of Wannier’s model. We will return to this important
+and obtain the effective pairing potential. The onsite and hopping                     point later when we discuss the superconducting pairing symmetry.
+parameters of Wannier’s model and Luo’s model, the local Hubbard                             Next, we compare the total and orbital-projected bare susceptibility
+interaction, as well as the computational details of DFT, RPA, and lin-                χ0(q) of the two models (the deﬁnition of different kinds of susceptibility
+earized gap equation calculations are found in Methods.                                is found in Methods). Figure 2a, b show χ0(q) of Wannier’s model on a
+                                                                                       high-symmetry q-path and in the 2D Brillouin zone. In panel (a), both
+Results                                                                                total and orbital-projected χ0(q) are shown, while in panel (b), we only
+Electronic structure and susceptibility                                                show total χ0(q). In Wannier’s model, the total χ0(q) has a peak at M. The
+Figure 1a shows the crystal structure of La3Ni2O7 under high pressure.                 peak value would be substantially enhanced in the spin susceptibility
+In our DFT calculations, we ﬁnd that after atomic relaxation, oxygen                   χs(q) when local Hubbard interactions are added on Ni orbitals in RPA
+octahedral rotations in La3Ni2O7 are completely suppressed under 30                    calculations (see Supplementary Note 5). By comparison, we perform
+GPa, consistent with the experiment1,45,54 and other theoretical                       the same calculations on Luo’s model and show the results in Fig. 2c, d.
+calculations8,23. We obtain a tetragonal structure whose theoretical                   We ﬁnd that while χ0(q) of Luo’s model is overall similar to that of
+lattice constants are in good agreement with the experiment1,45,54 (see                Wannier’s model, there are some notable differences. In Luo’s model,
+the comparison in Supplementary Note 1). Following the previous                        total χ0(q) at M gets suppressed
+                                                                                                                         and the highest peak of total χ0(q) is
+studies4,7–10,13–16, because the inter-block interaction is weak, we focus             along Γ to M, close to π2 , π2 . Compared to Wannier’s model, the total
+on one-block of La3Ni2O7, whose DFT band structure is used to do the                   χ0(q) is also slightly increased around the zone center (Γ point) in Luo’s
+downfolding to a bilayer two-orbital model whose ﬁrst Brillouin zone is                model. The implications of those changes in χ0(q) for the super-
+a simple two-dimensional (2D) square.                                                  conducting pairing symmetry will be discussed at the end.
+      Figure 1b shows the comparison of DFT band structure of
+La3Ni2O7 and the band structure from Wannier’s model. Wannier’s                        Superconducting pairing symmetry
+model exactly reproduces the four Ni-eg-derived bands close to the                     Now we study the superconducting pairing symmetry of La3Ni2O7 by
+Fermi level. The Ni-eg atomic projections onto those bands are shown                   solving the linearized gap equation with RPA method to treat the local
+in Supplementary Note 4. Figure 1c shows the Fermi surface of Wan-                     Hubbard interaction for the effective pairing potential. RPA method
+nier’s model, which has three sheets in the 2D Brillouin zone, labeled as              has been widely used to calculate the pairing symmetry of
+
+
+
+
+Fig. 1 | Crystal structure and electronic structure. a Crystal structure of La3Ni2O7   ∣vF(k)∣−1. d Comparison of DFT band structure of La3Ni2O7 under 30 GPa (blue solid
+under high pressure. b Comparison of DFT band structure of La3Ni2O7 under 30           curves) to the band structure of Luo’s model (red dashed curves). e The Fermi
+GPa (blue solid curves) to the band structure of Wannier’s model (red dashed           surface of Luo’s model. α, β, and γ label different Fermi surface sheets. The green
+curves). c The Fermi surface of Wannier’s model. α, β, and γ label different Fermi     color indicates the magnitude of inverse Fermi velocity ∣vF(k)∣−1. Source data are
+surface sheets. The green color indicates the magnitude of inverse Fermi velocity      provided as a Source Data ﬁle.
+
+
+
+Nature Communications | (2025)16:1054                                                                                                                                   2
+Article                                                                                                           https://doi.org/10.1038/s41467-025-56206-0
+
+
+
+
+Fig. 2 | Susceptibility. Bare static susceptibility χ0(q) at T = 116 K. a Total and   χ0(q) of Luo’s model along the high-symmetry q-path. (d) Total χ0(q) of Luo’s model
+orbital-projected χ0(q) of Wannier’s model along the high-symmetry q-path. b Total    in the 2D Brillouin zone. Source data are provided as a Source Data ﬁle.
+χ0(q) of Wannier’s model in the 2D Brillouin zone. c Total and orbital-projected
+
+
+
+unconventional superconductors such as cuprates and iron-                             two models have the same bases but slightly different parameters. By
+pnictides84,85, which proves to be reliable and consistent with other                 comparing the onsite energies and hopping matrix elements, we ﬁnd
+methods including ﬂuctuation exchange approximation (FLEX) and                        that the “biggest” difference between the two models is Ni-eg crystal
+functional renormalization group (fRG)68,77. We study a range of U with               ﬁeld splitting Δ. The difference in Δ is about 0.15 eV, while the differ-
+JH = 0.15U. The key results do not change if other physically reasonable              ences in the hopping matrix elements are a few times or even one
+ratios of JH/U are used (see Supplementary Note 9). In Fig. 3a, we show               order of magnitude smaller (see details in Supplementary Note 3).
+the eigenvalues λ of the linearized gap equation using Wannier’s                      Next, we perform a “thought-experiment”, in which we treat Δ as a free
+model. Since the superconducting transition temperature Tc ∝ e−1/λ, the               parameter and manually tune its value. For a given value of Δ, we re-
+eigenvector of the largest λ corresponds to the most favorable                        calculate the band structure and superconducting pairing symmetry
+superconducting pairing symmetry. We ﬁnd that the leading super-                      using the linearized gap equation with RPA method. We use U = 1.2 eV
+conducting instability has dxy symmetry with a sign difference between                as a representative interaction strength. Our main results do not
+α sheet and β/γ sheets. In addition, we also show two sub-leading                     depend on this speciﬁc value of U (see Supplementary Note 14). In
+superconducting instabilities that have d x2 y2 and s± pairing symme-                Fig. 4a, we compare the band structure of modiﬁed Wannier’s model to
+tries. The leading superconducting pairing symmetry does not change                   DFT band structure of La3Ni2O7 under 30 GPa, as Δ is ﬁne-tuned in a
+with the interaction strength U (we ﬁnd Uc = 1.4 eV that triggers the                 small range from 0.20 eV to 0.40 eV. The optimal value of Δ in Wan-
+formation of spin density wave). Figure 3b shows the gap function for                 nier’s model is 0.22 eV, based on the ﬁtting. We ﬁnd that tuning Δ in
+the largest eigenvalue of linearized gap equation, using Wannier’s                    this small range yields marginal effects on the overall band structure
+model. This gap function clearly exhibits dxy symmetry (the gap                       since the total bandwidth is about 4 eV. Correspondingly, the shape of
+function of the two sub-leading pairing symmetries is shown in Sup-                   the resulting Fermi surfaces remains almost unchanged with Δ (see
+plementary Note 12). In Fig. 3c, we show the superconducting pairing                  Supplementary Note 10). In Fig. 4b, we show the eigenvalues for the
+symmetry of Luo’s model. By contrast, we ﬁnd that the leading                         leading superconducting instability, using modiﬁed Wannier’s model,
+superconducting instability has s± symmetry, with two sub-leading                     as Δ varies. For comparison, the eigenvalues for two sub-leading
+superconducting instabilities that have dxy and d x2 y2 pairing symme-               superconducting instabilities are also shown. We ﬁnd that the leading
+tries, consistent with the previous studies8–10,12. The leading super-                superconducting instability has dxy symmetry (s± symmetry) if Δ is
+conducting pairing symmetry in Luo’s model does not change with the                   smaller (larger) than 0.37 eV. The brown dashed line highlights the
+interaction strength either (Uc = 1.3 eV for spin density wave). Figure 3d            original value of Δ in Wannier’s model, at which the leading super-
+shows the gap function for the largest eigenvalue of linearized gap                   conducting pairing symmetry is dxy. Next we switch to Luo’s model. In
+equation, using Luo’s model. This gap function exhibits s± symmetry,                  Fig. 4c, we compare the band structure of modiﬁed Luo’s model to DFT
+in which α and γ sheets are of the same sign, while β sheet is of the                 band structure of La3Ni2O7 under 30 GPa, as Δ is ﬁne-tuned in the same
+opposite sign. We note that a superconducting order parameter that                    range. The optimal value of Δ in Luo’s model is 0.37 eV, larger than
+changes signs between different Fermi sheets is widely observed in                    Wannier’s model. Similar to Wannier’s model, we ﬁnd insigniﬁcant
+iron-pnictides67–69,86–88.                                                            changes in the overall band structure of Luo’s model by such ﬁne-
+                                                                                      tuning of Δ. Then we re-calculate the superconducting pairing sym-
+Sensitivity to Ni-eg crystal ﬁeld splitting                                           metry at the same interaction strengths, using modiﬁed Luo’s model,
+Next, we trace the main source for the different pairing symmetries                   as Δ varies. Figure 4d shows the eigenvalues for the leading super-
+predicted by Wannier’s model and Luo’s model, despite the fact that                   conducting instabilities, as well as two sub-leading superconducting
+they exhibit very similar Fermi surfaces. As we mentioned earlier, the                instabilities. We ﬁnd the same trend that a smaller (larger) Δ favors dxy
+
+
+Nature Communications | (2025)16:1054                                                                                                                                  3
+Article                                                                                                               https://doi.org/10.1038/s41467-025-56206-0
+
+
+
+
+Fig. 3 | Superconducting pairing symmetry. a The eigenvalues λ of linearized gap         λ of linearized gap equation with RPA method, using Luo’s model. The leading
+equation with RPA method, using Wannier’s model. The leading superconducting             superconducting instability has s± (blue circles), while two sub-leading super-
+instability has dxy (red squares), while two sub-leading superconducting instabilities   conducting instabilities have dxy (red squares) and d x 2 y2 (green triangles) sym-
+have d x 2 y2 (green triangles) and s± (blue circles) symmetries, respectively. b Gap   metries, respectively. d Gap function for the leading superconducting instability of
+function for the leading superconducting instability of Wannier’s model calculated       Luo’s model calculated at U = 1.2 eV and JH = 0.15U = 0.18 eV, which exhibits s±
+at U = 1.2 eV and JH = 0.15U = 0.18 eV, which exhibits dxy symmetry. c The eigenvalues   symmetry. Source data are provided as a Source Data ﬁle.
+
+
+
+
+Fig. 4 | Tuning Ni-eg crystal ﬁeld splitting. a Comparison of DFT band structure of      band structure of La3Ni2O7 under 30 GPa (gray) to the band structure of modiﬁed
+La3Ni2O7 under 30 GPa (gray) to the band structure of modiﬁed Wannier’s model at         Luo’s model at a few different Ni-eg crystal ﬁeld splittings Δ. d The eigenvalues λ of
+a few different Ni-eg crystal ﬁeld splittings Δ. b The eigenvalues λ of linearized gap   linearized gap equation with RPA method for the leading superconducting
+equation with RPA method for the leading superconducting instability as well as          instability as well as two sub-leading superconducting instabilities in modiﬁed Luo’s
+two sub-leading superconducting instabilities in modiﬁed Wannier’s model, cal-           model, calculated at U = 1.2 eV and JH = 0.18 eV. The leading superconducting
+culated at U = 1.2 eV and JH = 0.18 eV. The leading superconducting pairing sym-         pairing symmetry is dxy (s±) when Δ is smaller (larger) than 0.30 eV. The dashed
+metry is dxy (s±) when Δ is smaller (larger) than 0.37 eV. The dashed brown line         brown line highlights the original value of Δ = 0.37 eV in Luo’s model. Source data
+highlights the original value of Δ = 0.22 eV in Wannier’s model. c Comparison of DFT     are provided as a Source Data ﬁle.
+
+
+
+Nature Communications | (2025)16:1054                                                                                                                                        4
+Article                                                                                                            https://doi.org/10.1038/s41467-025-56206-0
+
+
+
+
+Fig. 5 | Inverse Fermi velocity and bare static susceptibility. a Average inverse     modiﬁed Luo’s model as a function of Ni-eg crystal ﬁeld splitting Δ. The dashed
+Fermi velocity ðjvF ðkÞj1 Þavg over the γ sheet of modiﬁed Wannier’s model as a      brown line highlights the original value of Δ = 0.37 eV in Luo’s model. d Total χ0(q)
+function of Ni-eg crystal ﬁeld splitting Δ. The dashed brown line highlights the      along the high-symmetry q-path of modiﬁed Luo’s model at a few different Ni-eg
+original value of Δ = 0.22 eV in Wannier’s model. b Total χ0(q) along the high-       crystal ﬁeld splittings Δ. We set the lattice constant a = 1 and the reduced Planck
+symmetry q-path of modiﬁed Wannier’s model at a few different Ni-eg crystal ﬁeld      constant ℏ = 1, and thus Fermi velocity has the unit of energy. Source data are
+splittings Δ. c Average inverse Fermi velocity ðjvF ðkÞj1 Þavg over the γ sheet of   provided as a Source Data ﬁle.
+
+
+
+
+symmetry (s± symmetry) with the critical point at 0.30 eV. The dashed                 eV−1, larger than that of Wannier’s model (3.9 eV−1), which shows the
+brown line highlights the original value of Δ in Luo’s model, which is                tendency of favoring s± symmetry.
+larger than the critical value. Thus the leading superconducting pairing
+symmetry of Luo’s model is s±.                                                        Discussion
+     To get a deeper understanding of the effects from a small change                 Before we conclude, we make a few comments.
+in Ni-eg crystal ﬁeld splitting on the pairing symmetry, we study the                      1) The above analysis does not mean that the pairing symmetry of
+inverse Fermi velocity ∣vF(k)∣−1 and bare total susceptibility χ0(q), both            La3Ni2O7 only depends on Ni-eg crystal ﬁeld splitting. Rather, what we
+of which play a crucial role in the linearized gap equation                           want to highlight is the sensitive dependence of La3Ni2O7 pairing
+calculations76. As we ﬁnd in Fig. 1, ∣vF(k)∣−1 has large values on γ sheet,           symmetry on its low-energy electronic structure, in particular Ni-eg
+while the α and β sheets have substantially smaller ∣vF(k)∣−1. Thus we                crystal ﬁeld splitting. This implies that a prediction of pairing sym-
+average ∣vF(k)∣−1 over the γ sheet of modiﬁed Wannier’s model and                     metry based on a given tight-binding model could be biased and does
+show ðjvF ðkÞj1 Þavg as a function of Ni-eg crystal ﬁeld splitting Δ. The raw        not provide the complete picture, considering inevitable approxima-
+data of ∣vF(k)∣−1 as a function of Δ are found in Supplementary Note 10.              tions and uncertainties introduced in the modeling. Instead, the trend
+Figure 5a shows that ðjvF ðkÞj1 Þavg monotonically increases with Δ. This            that a smaller (larger) Ni-eg crystal ﬁeld splitting favors dxy (s±) pairing
+indicates that with an increased Δ, the γ sheet that is mainly composed               symmetry in La3Ni2O7 is robust and conclusive.
+of d 3z 2 r 2 orbital, carries more weight in the linearized gap equation                 2) Compared to ref. 41, we employ smaller U values in the linearized
+calculations. Figure 5b shows the bare total susceptibility χ0(q) of                  gap equation calculations with RPA, because RPA is a weak-coupling
+modiﬁed Wannier’s model at a few different Δ (the orbital-projected                   theory and U in RPA calculations is understood as a renormalized (i.e.,
+χ0(q) are shown in Supplementary Note 11). Figure 5b shows that when                  reduced) interaction U    89,90. Spin density wave (SDW) instability is trig-
+Δ = 0.2 eV, total χ0(q) has a clear peak at M point, which suggests that                                
+                                                                                      gered at a small U value in the RPA method. This is an intrinsic property
+intralayer correlations are signiﬁcant. This usually favors d-wave                    of RPA, as pointed out by refs. 76,90. Our critical U value for SDW in
+pairing64–66. As Δ increases, total χ0(q) gets reduced along the zone                 La3Ni2O7 is consistent with the previous RPA studies9,17.
+boundary (X → M) but increases around the zone center (Γ point). The                       3) Our calculations show that when the ratio JH/U is within a
+enhancement of χ0(q) around Γ point is associated with the strength-                  physically reasonable range between 0.1 and 0.29,10,12,17,78, Wannier’s
+ening of interlayer correlations. This, together with d 3z 2 r 2 orbital             model favors dxy symmetry. Using Wannier’s model, we also calculate
+carrying more weight, favors s-wave pairing, as a number of recent                    the phase diagram of pairing symmetry for a larger range of JH/U ratios
+studies have shown5,22,38. Figure 5c, d show ðjvF ðkÞj1 Þavg and total χ0(q)         (see Supplementary Note 9). We ﬁnd that when JH/U were sufﬁciently
+of modiﬁed Luo’s model as Δ varies. We ﬁnd exactly the same trends as                 large, Wannier’s model would favor d x2 y2 pairing symmetry, con-
+Wannier’s model: 1) ðjvF ðkÞj1 Þavg increases with Δ and 2) an increasing            sistent with Ref. 17. In addition, a number of other works use variants of
+Δ reduces χ0(q) along the zone boundary but enhances χ0(q) around                     t-J model to study the superconducting pairing symmetry of
+the zone center, both of which suggests that the favorable super-                     La3Ni2O721,22,38. They ﬁnd that the pairing symmetry depends on
+conducting pairing symmetry would change from d-wave to s-wave. In                    exchange interactions J. This does not conﬂict with our results,
+particular, at the original value of Δ, ðjvF ðkÞj1 Þavg of Luo’s model is 4.2        because in multi-orbital systems, when one derives the t-J model from a
+
+
+Nature Communications | (2025)16:1054                                                                                                                                    5
+Article                                                                                                               https://doi.org/10.1038/s41467-025-56206-0
+
+
+Hubbard-like model, the exchange interaction J depends on hopping               can be compactly written as:
+parameters and crystal ﬁeld splitting, as well as U and JH. In our work,
+we ﬁnd that when Ni-eg crystal ﬁeld splitting increases, the favorable                                                             ^ +H
+                                                                                                                                ^ =H
+                                                                                                                                H      ^                                                  ð1Þ
+                                                                                                                                     0   int
+pairing symmetry changes from d-wave to s-wave, because the d 3z 2 r 2
+orbital carries more weight in the linearized gap equation calculations         where
+and the interlayer correlation is enhanced, as manifested by the sus-
+                                                                                                                                X
+ceptibility χ(q) at Γ point. This is consistent with Refs. 22,38, which ﬁnd                                        ^ =
+                                                                                                                   H                 ^ y H ðkÞΨ
+                                                                                                                                     Ψ        ^
+                                                                                                                     0                 kσ 0     kσ                                        ð2Þ
+that an increased interlayer exchange interaction J⊥ would change the                                                           kσ
+pairing symmetry from d-wave to s-wave in La3Ni2O7.
+                                                                                        y
+     4) We comment that tuning Ni-eg crystal ﬁeld splitting of complex          and Ψ^ = ð^cy , ^cy , ^cy , ^cy Þ in which ^cy is the creation opera-
+                                                                                      kσ    kσ1z kσ1x kσ2z kσ2x              kσν
+oxides is experimentally feasible because Ni-eg crystal ﬁeld splitting is       tor for orbital ν with momentum k and spin σ. (1z, 1x, 2z, 2x) is a
+directly coupled to the NiO6 oxygen octahedra environment91,92. Static          shorthand for the orbital basis:
+or dynamical perturbations may change the Ni-eg crystal ﬁeld splitting                                                           E                                       E
+                                                                                                                                                     
+by up to 0.5 eV, which is sufﬁciently large to alter the pairing symmetry                   ∣ Ni1- d 3z 2 r 2 , ∣ Ni1- d x 2 y2 , ∣ Ni2- d 3z 2 r 2 , ∣ Ni2- d x2 y2                  ð3Þ
+of La3Ni2O7.
+     5) Related to the preceding point, since the physical Ni-eg crystal        where 1 and 2 label different NiO2 layers.
+ﬁeld splitting is very close to the critical value, La3Ni2O7 may exhibit            For H^ , we use the full Slater-Kanomori-type interaction for
+                                                                                           int
+distinct pairing symmetries under experimental perturbations that can           multi-orbital systems83:
+either alter the ratio of in-plane and out-of-plane Ni-O bond lengths or                       X                      X                                                                  
+move the position of Ni atoms in a NiO6 oxygen octahedron.                        ^ =U
+                                                                                  H                   ^ αν" n
+                                                                                                      n     ^ αν# +             ðU 0  J H δ σσ 0 Þðn
+                                                                                                                                                    ^ α1zσ n          ^ α2zσ n
+                                                                                                                                                           ^ α1xσ 0 + n      ^ α2xσ 0 Þ
+                                                                                    int
+     In conclusion, by performing ﬁrst principles and effective model                          α, ν                   α, σσ 0
+                                                                                                      X y                                                                  
+calculations, we ﬁnd that the superconducting pairing symmetry of                             JH       ^cα1z# ^cyα1x" ^cα1x# ^cα1z" + ^cyα2z# ^cyα2x" ^cα2x# ^cα2z" + h.c.
+La3Ni2O7 very sensitively depends on Ni-eg crystal ﬁeld splitting. A                                   α
+                                                                                                X y                                                                  
+slight increase in Ni-eg crystal ﬁeld splitting (<0.2 eV) changes the                        J  0^cα1z# ^cyα1z" ^cα1x# ^cα1x" + ^cyα2z# ^cyα2z" ^cα2x# ^cα2x" + h.c.
+leading superconducting pairing symmetry from dxy to s±. When the                                     α
+DFT band structure is exactly reproduced by the downfolded model,                                                                                                                         ð4Þ
+we ﬁnd that the pairing symmetry of La3Ni2O7 is dxy. We also reveal that
+the transition from dxy to s± pairing symmetry is associated with an            where α labels a site, ν labels an atomic orbital (ν = 1x, 1z, 2x, 2z), and σ is
+increase in inverse Fermi velocity and zone-center susceptibility.              spin. ‘h.c.’ means hermitian conjugate. U and U 0 are the intraorbital and
+Finally, we conjecture that such sensitive dependence of pairing                interorbital interaction strengths. JH is the Hund’s coupling strength
+symmetry on low-energy electronic structure may exist in other multi-           and J 0 is the pair-hopping strength. The ﬁrst line of Eq. (4) is the density-
+orbital unconventional superconductors (e.g., La4Ni3O1043,47,93–98) and         density interactions. The second line is the spin-ﬂip interaction. The
+thus care is required in the downfolding procedure when ones studies            third line is the pair-hopping interaction. Throughout our calculations,
+unconventional superconductivity in realistic materials.                        we set U 0 = U  2J H and J 0 = J H .
+                                                                                     Wannier’s model is obtained by using MLWF72,73 to ﬁt the DFT
+Methods                                                                         band structure of La3Ni2O7 under 30 GPa. HW     0 ðkÞ is written in the form
+First-principles calculations                                                   of:
+We perform DFT70,71 calculations, as implemented in VASP80,81 with the                                                               X
+projector augmented wave (PAW) method. We use generalized gradient                                                 HW
+                                                                                                                    0 ðkÞ =              HW
+                                                                                                                                          0 ðRÞe
+                                                                                                                                                ikR
+                                                                                                                                                                                          ð5Þ
+approximation (GGA) with Perdew-Burke-Ernzerhof parametrization99                                                                    R
+for the exchange-correlation function. We use an energy cutoff of
+600 eV. We employ the conventional orthogonal cell of La3Ni2O7 (48-             We use a Γ-centered k-mesh of 20 × 20 to sample the two-
+atom) to perform the atomic relaxation. The k-mesh is 16 × 16 × 4. The          dimensional Brillouin zone. Hence there are altogether 441 R
+total energy convergence criterion is 10−7 eV. The force convergence            and ∣Rx∣ ≤ 10 and ∣Ry∣ ≤ 10. The onsite and hopping matrix elements
+criterion is 1 meV/Å. The pressure convergence criterion is 0.1 kbar. We        up to the third nearest neighbor HW  0 ðRÞ are given below (in the unit
+ﬁnd that under a pressure of 30 GPa, oxygen octahedra rotations in              of eV):
+La3Ni2O7 are completely suppressed and La3Ni2O7 is stabilized in a tet-
+                                                                                                            2                                                                  3
+ragonal structure (space group I4/mmm, see Supplementary Note 13 for                                   + 1:153                    + 0:000         0:602          + 0:000
+details). The DFT-optimized lattice constants and internal atomic posi-                             6 + 0:000                      + 1:375        + 0:000         + 0:010 7
+                                                                                                    6                                                                     7
+tions, as well as the experimental lattice constants, are shown in Sup-                 HW
+                                                                                         0 ð0, 0Þ = 6                                                                     7               ð6Þ
+                                                                                                    4 0:602                      + 0:000          + 1:153        + 0:000 5
+plementary Note 1.                                                                                              + 0:000           + 0:010         + 0:000          + 1:375
+      We note that the bilayer two-orbital model is intended to study a
+monoblock of La3Ni2O7 because the inter-block interaction is                                                2                                                                 3
+weak4,6–8,10,12,15. Thus we focus on a monoblock of La3Ni2O7 with its                                           0:155            0:248         + 0:030          + 0:031
+                                                                                                        6 0:248                  0:487                         + 0:000 7
+optimized atomic positions ﬁxed and a vacuum of 30 Å thick inserted                                     6                                        + 0:031                 7
+                                                                                            HW
+                                                                                             0 ð1, 0Þ = 6                                                                7                ð7Þ
+in the cell. The corresponding Brillouin zone is a two-dimensional                                      4 + 0:030                 + 0:031        0:155          0:248 5
+simple square. We perform a self-consistent calculation with a k-mesh                                           + 0:031           + 0:000        0:248          0:487
+of 20 × 20 × 1 on this bulk-like “freestanding” La3Ni2O7 to make direct
+connections to the bilayer two-orbital model in literature4,6–8,10,12,15 (see                              2                                                             3
+                                                                                                          0:023                 + 0:000         + 0:004         + 0:000
+Fig. 1a in the main text for the crystal structure of La3Ni2O7 under high
+                                                                                                        6 + 0:000                + 0:064         + 0:000         + 0:003 7
+pressure).                                                                                              6                                                                7
+                                                                                            HW
+                                                                                             0 ð1, 1Þ = 6                                                                7                ð8Þ
+                                                                                                        4 + 0:004                + 0:000         0:023          + 0:000 5
+The downfolded models                                                                                     + 0:000                + 0:003         + 0:000         + 0:064
+The details of Wannier’s model and Luo’s model are shown below. We
+set the in-plane lattice constants a = b to be 1 throughout. Both models
+
+
+Nature Communications | (2025)16:1054                                                                                                                                                         6
+Article                                                                                                                                                     https://doi.org/10.1038/s41467-025-56206-0
+
+
+Table 1 | The parameters of Luo’s model HL0 ðkÞ4                                                                        summation over ωn can be analytically performed and we obtain:
+
+ tx1                         tz1                            tx2                       tz2                  txz                                                    1 XX
+                                                                                                            3                     χ 0 ðqÞl 1 l 2 , l 3 l 4 =               ða    Þ ða       Þ* ða Þ 0
+                                                                                                                                                                 N k k n, n0 k + q l1 n k + q l 3 n k l 4 n
+ -0.483                      -0.110                         0.069                     -0.017               0.239
+                                                                                                                                                                                                                    ð15Þ
+ tx?                         tz?                            txz                       ϵx                   ϵz                                                            nF ½ðϵk + q Þn   nF ½ðϵk Þn0 
+                                                             4                                                                                           ðak Þ*l 2 n0
+ 0.005                       -0.635                         -0.034                    0.776                0.409                                                         ðϵk + q Þn  iΩm  ðϵk Þn0
+The unit is eV.                                                                                                         where ak is the transition matrix that diagonalizes H0 ðkÞ. nF is the
+                                                                                                                        Fermi-Dirac occupancy function and ϵ(k)n is the n-th eigenvalue of
+                                                                                                                        H0 ðkÞ. If Ωm = 0, we get the static susceptibility χ0(q) = χ0(q, Ωm = 0):
+
+                                   2                                                                 3                                                            1 XX
+                            0:011                      + 0:022              0:003          + 0:003                              χ 0 ðqÞl1 l 2 , l 3 l4 =                 ða    Þ ða        Þ* ða Þ 0
+                                                                                                                                                                 N k k n, n0 k + q l 1 n k + q l 3 n k l 4 n
+                          6 + 0:022                     0:064               + 0:003         0:004 7                                                                                                               ð16Þ
+                          6                                                                          7                                                                   nF ½ðϵk + q Þn   nF ½ðϵk Þn0 
+              HW
+               0 ð2, 0Þ = 6                                                                          7            ð9Þ
+                          4 0:003                      + 0:003              0:011          + 0:022 5                                                    ðak Þ*l 2 n0
+                                                                                                                                                                              ðϵk + q Þn  ðϵk Þn0
+                                       + 0:003          0:004                + 0:022         0:064
+                                                                                                                             The above bare static susceptibility is a four-index tensor. The
+The C4 rotation symmetry in the tetragonal cell leads to :                                                              total bare static susceptibility is deﬁned as:
+
+                  HW           W            W           W
+                   0 ð1, 0Þ = H0 ð1, 0Þ = H0 ð0, 1Þ = H0 ð0,  1Þ
+                                                                                                                                                                           1X
+                                                                                                                                                         χ tot
+                                                                                                                                                           0 ðqÞ =            ½χ ðqÞll, l 0 l 0                    ð17Þ
+                  HW           W             W            W
+                                                                                                                 ð10Þ                                                      2 0 0
+                   0 ð1, 1Þ = H0 ð1,  1Þ = H0 ð1, 1Þ = H0 ð1,  1Þ                                                                                                         l, l
+
+                  HW           W            W           W
+                   0 ð2, 0Þ = H0 ð2, 0Þ = H0 ð0, 2Þ = H0 ð0,  2Þ                                                      The orbital projected bare static susceptibility is deﬁned as:
+
+Other H0 ðRÞ can be found in our Supplementary Data 1. Using the                                                                                                         1 X
+                                                                                                                                                         χ ν0 ðqÞ =          ½χ 0 ðqÞll, l 0 l0                    ð18Þ
+occupancy of 3 electrons per formula, we obtain that the Fermi level of                                                                                                  2 0
+                                                                                                                                                                           l, l = ν
+Wannier’s model is 0.782 eV. We note that for the furthest distance
+R = (10, 10), the magnitude of each matrix element of HW 0 ð10, 10Þ does                                                where ν is a given orbital. In the bilayer two-orbital model, ν is either
+not exceed 0.03 meV. This shows that Wannier’s model practically                                                        d 3z 2 r 2 or d x2 y2 .
+includes all nonzero hoppings.                                                                                                  The static spin and charge susceptibilities within random-phase-
+     Luo’s model is constructed in ref. 4, which takes the form of:                                                     approximation are deﬁned in the next subsection.
+
+                                                        H11 ðkÞ             H12 ðkÞ                                     Random phase approximation calculations
+                                        HL0 ðkÞ =                                                                ð11Þ
+                                                        H12 ðkÞ             H22 ðkÞ                                     The details of random-phase-approximation (RPA)74–79 method for the
+                                                                                                                        calculation of spin and charge susceptibilities are shown below. Based
+where                                                                                                                   on charge and spin susceptibilities, we construct an effective pairing
+                                             "                      #                                                   potential for subsequent linearized gap equation calculations.
+                                                 T zk        Vk                             t z?    V 0k                     Throughout this section, the tensor multiplication of two four-
+                H11 ðkÞ = H22 ðkÞ =                                     ,   H12 ðkÞ =                            ð12Þ   index tensors C = AB is deﬁned as follows:
+                                                 Vk          T xk                           V 0k    t x?
+                                                                                                                                                                                     X
+with                                                                                                                                              C ij, kl = ðABÞij, kl =                   Aij, mn Bmn, kl :       ð19Þ
+                                                                                                                                                                                     m, n
+                                                       
+        x=z        x=z                                              x=z
+       T k = 2t 1     cos k x + cos k y + 4t 2 cos k x cos k y + ϵx=z
+                                                                                                             ð13Þ   where both A and B are four-index tensors. The spin and charge
+        V k = 2t xz
+                 3 cos k x  cos k y ,     V 0k = 2t xz
+                                                     4 cos k x  cos k y :                                              susceptibilities within RPA method are deﬁned as75,76,79:
+
+All the parameters in Luo’s model are found in Table 1.                                                                                                χ s ðqÞ = ½I  χ 0 ðqÞU s 1 χ 0 ðqÞ                        ð20Þ
+
+Susceptibility
+We deﬁne different types of susceptibility as follows. We set the                                                                                      χ c ðqÞ = ½I + χ 0 ðqÞU c 1 χ 0 ðqÞ                        ð21Þ
+Boltzmann constant kB and the reduced Planck constant ℏ to be 1
+throughout. For a multi-orbital non-interacting model H0 ðkÞ, the bare                                                  where the U-matrices take the form of78:
+susceptibility is deﬁned as78:
+                                                                                                                                                                    8
+                                                                                                                                                                    > Uα       l1 = l2 = l3 = l4
+                                                    X                                                                                                               >
+                                                                                                                                                                    >
+                     χ 0 ðqÞl 1 l 2 , l 3 l 4 =              ½G0 ðk + qÞl 1 l 3 ½G0 ðkÞl 4 l 2                                                                   < U0       l 1 = l 3 ≠l 2 = l 4
+                                                                                                                 ð14Þ              ðU s Þαl 1 , αl 2 , αl3 , αl 4 =      α
+                                                        k                                                                                                           >
+                                                                                                                                                                    > J        l 1 = l 2 ≠l 3 = l 4
+                                                                                                                                                                    >
+                                                                                                                                                                    : 0
+                                                                                                                                                                        Hα
+                                                                                                                                                                       Jα      l 1 = l 4 ≠l 2 = l 3
+where q = (q, Ωm) and k = (k, ωn) are four-component                                                                                                                8                                               ð22Þ
+                                                                                                                                                                    > U                     l1 = l2 = l3 = l4
+vectors. Ωm = 2mπT is a bosonic frequency and ωn = (2n + 1)πT is a                                                                                                  >
+                                                                                                                                                                    >
+                                                                                                                                                                         α
+                                                                                                                                                                    < U 0 + 2J              l 1 = l 3 ≠l 2 = l 4
+fermionic frequency. T is the temperature and the summation                                                                                                                  α  Hα
+P       P                                                                                                                          ðU c Þαl 1 , αl 2 , αl3 , αl 4 =        0
+      T                                                                                                                                                             >
+                                                                                                                                                                    > 2U  J Hα              l 1 = l 2 ≠l 3 = l 4
+  k= N    k, ωn . For non-interacting Green’s function G0, the
+          k
+                                                                                                                                                                    >
+                                                                                                                                                                    : 0 α
+                                                                                                                                                                      Jα                     l 1 = l 4 ≠l 2 = l 3
+
+
+
+
+Nature Communications | (2025)16:1054                                                                                                                                                                                 7
+Article                                                                                                                                    https://doi.org/10.1038/s41467-025-56206-0
+
+
+where α labels a site and li (i = 1, 2, 3, 4) labels an orbital. All the other                                  Data availability
+entries of Uc, Us are zero. The derivation of Eq. (22) based on the                                             The data supporting the conclusions of this study are provided in
+Hamiltonian Eq. (4) is found Supplementay Note 4.                                                               the Supplementary Information or Source Data ﬁle. Any additional
+     In this work, we choose U 0α = U α  2J Hα and J 0α = J Hα . For the results                               data relevant to the study’s ﬁndings are available from the corre-
+in the main text, we use JH = 0.15U for each Ni site78. We also test other                                      sponding author upon request.
+JH/U ratios and ﬁnd that the key results do not qualitatively change (see
+Supplementary Note 9).                                                                                          Code availability
+     The effective pairing potential in singlet (s) or triplet (t) channel is                                   The electronic structure calculations were performed using the pro-
+given by76                                                                                                      prietary code VASP81 and the open-source code Wannier9073. Wan-
+                                                                                                                nier90 is freely distributed on academic use under the Massachusetts
+                                               0   1         0             0                                    Institute of Technology (MIT) License.
+                          V s=t ðk, k Þ =            ½V ðk, k Þ ± V ðk,  k Þ                           ð23Þ
+                                                   2
+                                                                                                                References
+where                                                                                                           1.    Sun, H. et al. Signatures of superconductivity near 80 K in a nick-
+                                              h                           i                                           elate under high pressure. Nature 621, 493 (2023).
+              0
+                  X                                                     0
+  V ij, mn k, k =   ðak Þ*l 2 m ðak Þ*l3 n Re V l 1 l 2 , l 3 l 4 ðk, k Þ ðak0 Þl 1 i ðak0 Þl 4 j             2.    Hou, J. et al. Emergence of high-temperature superconducting
+                        l1 l2 l3 l4                                                                                   phase in pressurized La3Ni2O7 crystals. Chin. Phys. Lett. 40,
+                                                                                                         ð24Þ         117302 (2023).
+                                                                                                                3.    Shilenko, D. A. & Leonov, I. V. Correlated electronic structure,
+with                                                                                                                  orbital-selective behavior, and magnetic correlations in double-
+                                                                                                                      layer La3Ni2O7 under pressure. Phys. Rev. B 108, 125105 (2023).
+                 0
+  V l1 l 2 , l 3 l4 ðk, k Þ                                                                                     4.    Luo, Z., Hu, X., Wang, M., Wú, W. & Yao, D.-X. Bilayer two-orbital
+     8                                                   
+     < 21 U s + U c + 3U s χ s k  k0 U s  U c χ c k  k0 U c                                  for singlet           model of La3Ni2O7 under pressure. Phys. Rev. Lett. 131, 126001
+                                                                l1 l2 , l3 l4
+  =                                                                                                             (2023).
+     :  1 U s χ s k  k0 U s + U c χ c k  k0 U c                                              for triplet
+                  2                                  l l ,l l              1 2   3 4                            5.    Qin, Q. & Yang, Y.-f High-Tc superconductivity by mobilizing local
+                                                                                                         ð25Þ         spin singlets and possible route to higher Tc in pressurized
+                                                                                                                      La3Ni2O7. Phys. Rev. B 108, L140504 (2023).
+We note that in Eq. (24) (l1l2, l3l4) are labels of atomic orbitals, and                                        6.    Huang, J., Wang, Z. D. & Zhou, T. Impurity and vortex states in the
+(ij, mn) are labels of band indices.                                                                                  bilayer high-temperature superconductor La3Ni2O7. Phys. Rev. B
+                                                                                                                      108, 174501 (2023).
+Linearized gap equation                                                                                         7.    Zhang, Y., Lin, L.-F., Moreo, A., Maier, T. A. & Dagotto, E. Trends in
+We show the details of linearized gap equation calculations below. We                                                 electronic structures and s±-wave pairing for the rare-earth series in
+focus on a two-dimensional Brillouin zone (which is relevant to the                                                   bilayer nickelate superconductor R3Ni2O7. Phys. Rev. B 108, 165141
+bilayer two-orbital model in this work).                                                                              (2023).
+     The linearized gap equation for multi-orbital system is:                                                   8.    Zhang, Y., Lin, L.-F., Moreo, A., Maier, T. A. & Dagotto, E. Structural
+                                                                                                                      phase transition, s±-wave pairing, and magnetic stripe order in
+                                      XZ                      0       1            0      0                           bilayered superconductor La3Ni2O7 under pressure. Nat. Commun.
+                     Δi ðkÞ =                           dk             0 Γij ðk, k ÞΔj ðk Þ             ð26Þ
+                                       j           FSj            jvj ðk Þj                                           15, 2470 (2024).
+                                                                                                                9.    Liu, Y.-B., Mei, J.-W., Ye, F., Chen, W.-Q. & Yang, F. s±-wave pairing
+where FSj means that the integration is performed on the j-th Fermi                                                   and the destructive role of apical-oxygen deﬁciencies in La3Ni2O7
+                            0
+surface sheet. vj ðk Þ is the Fermi velocity at the momentum k of j-th                                                under pressure. Phys. Rev. Lett. 131, 236002 (2023).
+Fermi        surface          sheet.     The    effective      pairing    potential                             10.   Yang, Q.-G., Wang, D. & Wang, Q.-H. Possible s±-wave super-
+         0      s=t         0
+Γij ðk, k Þ = V jj, ii ðk, k Þ (see Eqs. (23)–(25)). Δi(k) is the gap function of i-                                  conductivity in La3Ni2O7. Phys. Rev. B 108, L140505 (2023).
+th Fermi surface sheet. With a discrete k-mesh, Eq. (26) is reduced to an                                       11.   Qu, X.-Z. et al. Bilayer t − J − J⊥ model and magnetically mediated
+eigenvalue problem:                                                                                                   pairing in the pressurized nickelate La3Ni2O7. Phys. Rev. Lett. 132,
+                                                                                                                      036502 (2024).
+                                                                       0           0
+                                      λΔi ðkÞ = M ij ðk, k ÞΔj ðk Þ                                      ð27Þ   12.   Gu, Y., Le, C., Yang, Z., Wu, X. & Hu, J. Effective model and pairing
+                                                                                                                      tendency in bilayer Ni-based superconductor La3Ni2O7,
+                                           0
+where the matrix M ij ðk, k Þ is:                                                                                     arXiv:2306.07275 (2023).
+                                                                                                                13.   Fan, Z. et al. Superconductivity in nickelate and cuprate super-
+                                                                            0
+                                           0              1          l j ðk Þ              0                          conductors with strong bilayer coupling. Phys. Rev. B 110,
+                          M ij ðk, k Þ =                                    0    Γij ðk, k Þ            ð28Þ
+                                                     ð2πÞ2 jvj ðk Þj                                                  024514 (2024).
+                                                                                                                14.   Yang, Y.-f, Zhang, G.-M. & Zhang, F.-C. Interlayer valence bonds and
+          0                                               0
+and l j ðk Þ is the length element at k grid of j-th Fermi surface sheet and                                          two-component theory for high-Tc superconductivity of La3Ni2O7
+      0                                                     0
+vj ðk Þ is the Fermi velocity of the j-th energy band at k . The calculation                                          under pressure. Phys. Rev. B 108, L201108 (2023).
+          0
+of l j ðk Þ is shown in Supplementary Note 7. All momenta k are con-                                            15.   Luo, Z., Lv, B., Wang, M., Wú, W. & Yao, D.-X. High-Tc super-
+strained close to the Fermi surface such that ∣ϵk − μ∣ ≤ ξc where μ is the                                            conductivity in La3Ni2O7 based on the bilayer two-orbital t − J
+chemical potential and ξc is an energy cutoff. λ is the eigenvalue, which                                             model. NPJ Quantum Mater. 9, 61 (2024).
+is real. The largest eigenvalue corresponds to the leading super-                                               16.   Heier, G., Park, K. & Savrasov, S. Y. Competing dxy and s± pairing
+conducting instability.                                                                                               symmetries in superconducting La3Ni2O7: LDA + FLEX calculations.
+        In this work, for the linearized gap equation calculations, we use a                                          Phys. Rev. B 109, 104508 (2024).
+k-mesh of 200 × 200 × 1 to sample the 2D square Brillouin zone and ξc =                                         17.   Lechermann, F., Gondolf, J., Bötzel, S. & Eremin, I. M. Electronic
+1 meV. The temperature T is set at 116 K. In Wannier’s model, we ﬁnd                                                  correlations and superconducting instability in La3Ni2O7 under high
+1576 k points on the Fermi surface. In Luo’s model, we ﬁnd 1436 k                                                     pressure. Phys. Rev. B 108, L201121 (2023).
+points on the Fermi surface.
+
+
+Nature Communications | (2025)16:1054                                                                                                                                                      8
+Article                                                                                                    https://doi.org/10.1038/s41467-025-56206-0
+
+
+18. Bötzel, S., Lechermann, F., Gondolf, J. & Eremin, I. M. Theory of            40. Cao, Y. & Yang, Y.-f Flat bands promoted by Hund’s rule coupling in
+    magnetic excitations in the multilayer nickelate superconductor                  the candidate double-layer high-temperature superconductor
+    La3Ni2O7. Phys. Rev. B 109, L180502 (2024).                                      La3Ni2O7 under high pressure. Phys. Rev. B 109, L081105 (2024).
+19. Jiang, S., Wang, Z. & Zhang, F.-C. High-temperature super-                   41. Christiansson, V., Petocchi, F. & Werner, P. Correlated electronic
+    conductivity in La3Ni2O7. Chin. Phys. Lett. 41, 017402 (2024).                   structure of La3Ni2O7 under pressure. Phys. Rev. Lett. 131, 206501
+20. Wang, Y., Jiang, K., Wang, Z., Zhang, F.-C. & Hu, J. Electronic and              (2023).
+    magnetic structures of bilayer La3Ni2O7 at ambient pressure. Phys.           42. Shen, Y., Qin, M. & Zhang, G.-M. Effective Bi-layer model hamilto-
+    Rev. B 110, 205122 (2024).                                                       nian and density-matrix renormalization group study for the high-Tc
+21. Liao, Z. et al. Electron correlations and superconductivity in                   superconductivity in La3Ni2O7 under high pressure. Chin. Phys. Lett.
+    La3Ni2O7 under pressure tuning. Phys. Rev. B 108, 214522 (2023).                 40, 127401 (2023).
+22. Oh, H. & Zhang, Y.-H. Type-II t − J model and shared superexchange           43. Li, Q. et al. Signature of superconductivity in pressurized La4 Ni3 O10 .
+    coupling from Hund’s rule in superconducting La3Ni2O7. Phys. Rev.                Chin. Phys. Lett. 41, 017401 (2024).
+    B 108, 174511 (2023).                                                        44. Chen, J., Yang, F. & Li, W. Orbital-selective superconductivity in the
+23. Geisler, B., Hamlin, J. J., Stewart, G. R., Hennig, R. G. & Hirschfeld, P.       pressurized bilayer nickelate La3Ni2O7: an inﬁnite projected
+    Structural transitions, octahedral rotations, and electronic proper-             entangled-pair state study. Phys. Rev. B 110, L041111 (2024).
+    ties of A3Ni2O7 rare-earth nickelates under high pressure. npj               45. Wang, L. et al. Structure responsible for the superconducting state
+    Quantum Mater. 9, 38 (2024).                                                     in La3Ni2O7 at high-pressure and low-temperature conditions. J.
+24. Lange, H. et al. Feshbach resonance in a strongly repulsive ladder of            Am. Chem. Soc. 146, 7506 (2024).
+    mixed dimensionality: A possible scenario for bilayer nickelate              46. Wang, G. et al. Bulk high-temperature superconductivity in pres-
+    superconductors. Phys. Rev. B 109, 045127 (2024).                                surized tetragonal La2 PrNi2 O7 . Nature 634, 579 (2024).
+25. LaBollita, H., Pardo, V., Norman, M. R. & Botana, A. S. Electronic           47. Zhu, Y. et al. Superconductivity in pressurized trilayer La4Ni3O10−δ
+    structure and magnetic properties of La3Ni2O7 under pressure:                    single crystals. Nature 631, 531 (2024).
+    active role of the Ni-d x2 y2 orbitals, arXiv:2309.17279 (2023).            48. Schlömer, H., Schollwöck, U., Grusdt, F. and Bohrdt, A. Super-
+26. Zhang, Y. et al. High-temperature superconductivity with zero                    conductivity in the pressurized nickelate La3Ni2O7 in the vicinity of a
+    resistance and strange-metal behaviour in La3 Ni2 O7δ . Nat. Phys.              BEC-BCS crossover. Commun. Phys. 7, 366 (2024).
+    20, 1269 (2024).                                                             49. Zhang, M. et al. Effects of pressure and doping on Ruddlesden-
+27. Yang, J. et al. Orbital-dependent electron correlation in double-                Popper phases Lan+1NinO3n+1. J. Mater. Sci. Technol. 185, 147 (2024).
+    layer nickelate La3Ni2O7. Nat. Commun. 15, 4373 (2024).                      50. Lu, D.-C.et al. Superconductivity from Doping Symmetric Mass
+28. Pan, Z., Lu, C., Yang, F. & Wu, C. Effect of Rare-Earth Element                  Generation Insulators: Application to La3Ni2O7 under Pressure,
+    Substitution in Superconducting R3Ni2O7 under pressure. Chin.                    arXiv:2308.11195 (2023).
+    Phys. Lett. 41, 087401 (2024).                                               51. Wú, W., Luo, Z., Yao, D.-X. & Wang, M. Superexchange and charge
+29. Tian, Y.-H., Chen, Y., Wang, J.-M., He, R.-Q. & Lu, Z.-Y. Correlation            transfer in the nickelate superconductor La3Ni2O7 under pressure.
+    effects and concomitant two-orbital s±-wave superconductivity in                 Sci. China Phys. Mech. Astron. 67, 117402 (2024).
+    La3Ni2O7 under high pressure. Phys. Rev. B 109, 165154 (2024).               52. Liu, Z. et al. Electronic correlations and partial gap in the bilayer
+30. Zhang, Y., Lin, L.-F., Moreo, A., Maier, T. A. & Dagotto, E. Electronic          nickelate La3Ni2O7. Nat. Commun. 15, 7570 (2024).
+    structure, magnetic correlations, and superconducting pairing in             53. Zhang, Y., Lin, L.-F., Moreo, A. & Dagotto, E. Electronic structure,
+    the reduced Ruddlesden-Popper bilayer La3Ni2O6 under pressure:                   dimer physics, orbital-selective behavior, and magnetic tendencies
+    Different role of d 3z 2 r 2 orbital compared with La3Ni2O7. Phys. Rev. B       in the bilayer nickelate superconductor La3Ni2O7 under pressure.
+    109, 045151 (2024).                                                              Phys. Rev. B 108, L180510 (2023).
+31. Ryee, S., Witt, N. & Wehling, T. O. Quenched pair breaking by                54. Li, J.et al. Pressure-driven right-triangle shape superconductivity in
+    interlayer correlations as a key to superconductivity in La3Ni2O7.               bilayer nickelate La3Ni2O7, arxiv:2404.11369 (2024).
+    Phys. Rev. Lett. 133, 096002 (2024).                                         55. Li, D. et al. Superconductivity in an inﬁnite-layer nickelate. Nature
+32. Lu, C., Pan, Z., Yang, F. & Wu, C. Interplay of two Eg orbitals in               572, 624 (2019).
+    superconducting La3Ni2O7 under pressure. Phys. Rev. B 110,                   56. Li, D. et al. Superconducting dome in Nd1−xSrxNiO2 inﬁnite layer
+    094509 (2024).                                                                   ﬁlms. Phys. Rev. Lett. 125, 027001 (2020).
+33. Wang, G. et al. Pressure-Induced Superconductivity In Poly-                  57. Zeng, S. et al. Phase diagram and superconducting dome of inﬁnite-
+    crystalline La3 Ni2 O7δ . Phys. Rev. X 14, 011040 (2024).                       layer Nd1−xSrxNiO2 thin ﬁlms. Phys. Rev. Lett. 125, 147003 (2020).
+34. Yang, H., Oh, H. & Zhang, Y.-H. Strong pairing from a small Fermi            58. Gu, Q. et al. Single particle tunneling spectrum of superconducting
+    surface beyond weak coupling: Application to La3Ni2O7. Phys. Rev.                Nd1−xSrxNiO2 thin ﬁlms. Nat. Commun. 11, 6027 (2020).
+    B 110, 104517 (2024).                                                        59. Gu, Y., Zhu, S., Wang, X., Hu, J. & Chen, H. A substantial hybridi-
+35. Kaneko, T., Sakakibara, H., Ochi, M. & Kuroki, K. Pair correlations in           zation between correlated Ni-d orbital and itinerant electrons in
+    the two-orbital Hubbard ladder: implications for superconductivity               inﬁnite-layer nickelates. Commun. Phys. 3, 84 (2020).
+    in the bilayer nickelate La3Ni2O7. Phys. Rev. B 109, 045154 (2024).          60. Zeng, S. et al. Superconductivity in inﬁnite-layer nickelate
+36. Rhodes, L. C. & Wahl, P. Structural routes to stabilize super-                   La1−xCaxNiO2 thin ﬁlms. Sci. Adv. 8, eabl9927 (2022).
+    conducting La3Ni2O7 at ambient pressure. Phys. Rev. Mater. 8,                61. Osada, M. et al. Nickelate Superconductivity without Rare-Earth
+    044801 (2024).                                                                   Magnetism: (La, Sr)NiO2. Adv. Mater. 33, 2104083 (2021).
+37. Zhang, J.-X., Zhang, H.-K., You, Y.-Z. & Weng, Z.-Y. Strong pairing          62. Xia, C., Wu, J., Chen, Y. & Chen, H. Dynamical structural instability
+    originated from an emergent Z2 berry phase in La3Ni2O7. Phys. Rev.               and its implications for the physical properties of inﬁnite-layer
+    Lett. 133, 126501 (2024).                                                        nickelates. Phys. Rev. B 105, 115134 (2022).
+38. Lu, C., Pan, Z., Yang, F. & Wu, C. Interlayer-Coupling-Driven High-          63. Chen, H., Yang, Y.-f, Zhang, G.-M. & Liu, H. An electronic origin of
+    Temperature Superconductivity in La3Ni2O7 under Pressure. Phys.                  charge order in inﬁnite-layer nickelates. Nat. Commun. 14, 5477
+    Rev. Lett. 132, 146002 (2024).                                                   (2023).
+39. Chen, X., Jiang, P., Li, J., Zhong, Z. & Lu, Y. Critical charge and spin     64. Tsuei, C. C. & Kirtley, J. R. Pairing symmetry in cuprate super-
+    instabilities in superconducting La3Ni2O7, arXiv:2307.07154 (2023).              conductors. Rev. Mod. Phys. 72, 969 (2000).
+
+
+
+Nature Communications | (2025)16:1054                                                                                                                       9
+Article                                                                                                    https://doi.org/10.1038/s41467-025-56206-0
+
+
+65. Keimer, B., Kivelson, S. A., Norman, M. R., Uchida, S. & Zaanen, J.         90. Chen, L., Bourbonnais, C., Li, T. & Tremblay, A.-M. S. Magnetic
+    From quantum matter to high-temperature superconductivity in                    properties of the two-dimensional Hubbard model. Phys. Rev. Lett.
+    copper oxides. Nature 518, 179 (2015).                                          66, 369 (1991).
+66. Gull, E., Parcollet, O. & Millis, A. J. Superconductivity and the           91. Ardizzone, I. et al. Optical properties of LaNiO3 ﬁlms tuned from
+    pseudogap in the two-dimensional Hubbard model. Phys. Rev. Lett.                compressive to tensile strain. Phys. Rev. B 102, 155148 (2020).
+    110, 216405 (2013).                                                         92. Hwang, J. et al. Tuning perovskite oxides by strain: electronic
+67. Chubukov, A. V., Efremov, D. V. & Eremin, I. Magnetism, super-                  structure, properties, and functions in (electro)catalysis and fer-
+    conductivity, and pairing symmetry in iron-based superconductors.               roelectricity. Mater. Today 31, 100 (2019).
+    Phys. Rev. B 78, 134512 (2008).                                             93. Sakakibara, H. et al. Theoretical analysis on the possibility of
+68. Hirschfeld, P. J., Korshunov, M. M. & Mazin, I. I. Gap symmetry and             superconductivity in the trilayer Ruddlesden-Popper nickelate
+    structure of Fe-based superconductors. Rep. Prog. Phys. 74,                     La4 Ni3 O10 under pressure and its experimental examination: com-
+    124508 (2011).                                                                  parison with La3Ni2O7. Phys. Rev. B 109, 144511 (2024).
+69. Stewart, G. R. Superconductivity in iron compounds. Rev. Mod.               94. Li, J. et al. Structural transition, electric transport, and electronic
+    Phys. 83, 1589 (2011).                                                          structures in the compressed trilayer nickelate La4Ni3O10. Sci. China
+70. Hohenberg, P. & Kohn, W. Inhomogeneous electron gas. Phys. Rev.                 Phys. Mech. Astron. 67, 117403 (2024).
+    136, B864 (1964).                                                           95. Zhang, M. et al. s±-wave superconductivity in pressurized La4Ni3O10.
+71. Kohn, W. & Sham, L. J. Self-consistent equations including                      Phys. Rev. B 110, L180501 (2024).
+    exchange and correlation effects. Phys. Rev. 140, A1133 (1965).             96. Chen, C.-Q., Luo, Z., Wang, M., Wú, W. & Yao, D.-X. Trilayer multi-
+72. Marzari, N., Mostoﬁ, A. A., Yates, J. R., Souza, I. & Vanderbilt, D.            orbital models of La4Ni3O10. Phys. Rev. B 110, 014503 (2024).
+    Maximally localized Wannier functions: theory and applications.             97. Zhang, Y., Lin, L.-F., Moreo, A., Maier, T. A. & Dagotto, E. Prediction of
+    Rev. Mod. Phys. 84, 1419 (2012).                                                s±-wave superconductivity enhanced by electronic doping in tri-
+73. Mostoﬁ, A. A. et al. Wannier90: A tool for obtaining maximally-                 layer nickelates La4Ni3O10 under pressure. Phys. Rev. Lett. 133,
+    localised Wannier functions. Comput. Phys. Commun. 178, 685                     136001 (2024).
+    (2008).                                                                     98. Zhang, M.et al. Superconductivity in trilayer nickelate La4Ni3O10
+74. Hirsch, J. E. Two-dimensional Hubbard model: numerical simulation               under pressure, arXiv:2311.07423 (2024).
+    study. Phys. Rev. B 31, 4403 (1985).                                        99. Perdew, J. P., Burke, K. & Ernzerhof, M. Generalized gradient
+75. Yanase, Y. et al. Theory of superconductivity in strongly correlated            approximation made simple. Phys. Rev. Lett. 77, 3865 (1996).
+    electron systems. Phys. Rep. 387, 1 (2003).
+76. Graser, S., Maier, T. A., Hirschfeld, P. J. & Scalapino, D. J. Near-        Acknowledgements
+    degeneracy of several pairing channels in multiorbital models for           We are grateful to Steffen Bötzel, Frank Lechermann, Xianxin Wu, Fan
+    the Fe pnictides. New J. Phys. 11, 025016 (2009).                           Yang, Yi-feng Yang, and Dao-Xin Yao for useful discussions. This project
+77. Scalapino, D. J. A common thread: The pairing interaction for               was ﬁnancially supported by the National Natural Science Foundation of
+    unconventional superconductors. Rev. Mod. Phys. 84, 1383 (2012).            China under project number 12374064, Science and Technology
+78. Wu, X. et al. Robust d x2 y2 -wave superconductivity of inﬁnite-layer      Commission of Shanghai Municipality under grant number
+    nickelates. Phys. Rev. B 101, 060504 (2020).                                23ZR1445400, and a grant from the New York University Research
+79. Rømer, A. T., Scherer, D. D., Eremin, I. M., Hirschfeld, P. J. &            Catalyst Prize under project number RB627. NYU High-Performance-
+    Andersen, B. M. Knight shift and leading superconducting                    Computing (HPC) provides computational resources. C.X. was sup-
+    instability from spin ﬂuctuations in Sr2 RuO4 . Phys. Rev. Lett. 123,       ported by the National Natural Science Foundation of China under
+    247001 (2019).                                                              project number 12404082.
+80. Payne, M. C., Teter, M. P., Allan, D. C., Arias, T. A. & Joannopoulos, J.
+    D. Iterative minimization techniques for ab initio total-energy cal-        Author contributions
+    culations: molecular dynamics and conjugate gradients. Rev. Mod.            H.C. conceived and supervised the project. C.X., H.L., S.Z. and H.C.
+    Phys. 64, 1045 (1992).                                                      performed the calculations. H.C., C.X. and H.L. wrote the manuscript. All
+81. Kresse, G. & Furthmüller, J. Efﬁcient iterative schemes for ab initio       the authors participated in the discussion.
+    total-energy calculations using a plane-wave basis set. Phys. Rev. B
+    54, 11169 (1996).                                                           Competing interests
+82. Chen, H., Hampel, A., Karp, J., Lechermann, F. & Millis, A. J. Dyna-        The authors declare no competing interests.
+    mical mean ﬁeld studies of inﬁnite layer nickelates: physics results
+    and methodological implications. Front. Phys. 10, 835942 (2022).            Additional information
+83. Kanamori, J. Electron correlation and ferromagnetism of transition          Supplementary information The online version contains
+    metals. Prog. Theor. Phys. 30, 275 (1963).                                  supplementary material available at
+84. Scalapino, D. J. The case for d x 2 y2 pairing in the cuprate super-       https://doi.org/10.1038/s41467-025-56206-0.
+    conductors. Phys. Rep. 250, 329 (1995).
+85. Chubukov, A. Pairing mechanism in Fe-based superconductors.                 Correspondence and requests for materials should be addressed to
+    Annu. Rev. Condens. Matter Phys. 3, 57 (2012).                              Hanghui Chen.
+86. Du, Z. et al. Sign reversal of the order parameter in (Li1−xFex)
+    OHFe1−yZnySe. Nat. Phys. 14, 134 (2018).                                    Peer review information Nature Communications thanks Thomas Maier,
+87. Hanaguri, T., Niitaka, S., Kuroki, K. & Takagi, H. Unconventional s-        and the other, anonymous, reviewers for their contribution to the peer
+    wave superconductivity in Fe(Se, Te). Science 328, 474 (2010).              review of this work. A peer review ﬁle is available.
+88. Mazin, I. I., Singh, D. J., Johannes, M. D. & Du, M. H. Unconventional
+    superconductivity with a sign reversal in the order parameter of            Reprints and permissions information is available at
+    LaFeAsO1−xFx. Phys. Rev. Lett. 101, 057003 (2008).                          http://www.nature.com/reprints
+89. Bulut, N., Scalapino, D. J. & White, S. R. Comparison of Monte Carlo
+    and diagrammatic calculations for the two-dimensional Hubbard               Publisher’s note Springer Nature remains neutral with regard to jur-
+    model. Phys. Rev. B 47, 2742 (1993).                                        isdictional claims in published maps and institutional afﬁliations.
+
+
+Nature Communications | (2025)16:1054                                                                                                                      10
+Article                                                                        https://doi.org/10.1038/s41467-025-56206-0
+
+
+Open Access This article is licensed under a Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International License,
+which permits any non-commercial use, sharing, distribution and
+reproduction in any medium or format, as long as you give appropriate
+credit to the original author(s) and the source, provide a link to the
+Creative Commons licence, and indicate if you modiﬁed the licensed
+material. You do not have permission under this licence to share adapted
+material derived from this article or parts of it. The images or other third
+party material in this article are included in the article’s Creative
+Commons licence, unless indicated otherwise in a credit line to the
+material. If material is not included in the article’s Creative Commons
+licence and your intended use is not permitted by statutory regulation or
+exceeds the permitted use, you will need to obtain permission directly
+from the copyright holder. To view a copy of this licence, visit http://
+creativecommons.org/licenses/by-nc-nd/4.0/.
+
+© The Author(s) 2025
+
+
+
+
+Nature Communications | (2025)16:1054                                                                                  11
+

@@ -1,0 +1,134 @@
+\documentclass[UTF8,11pt]{ctexart}
+
+\usepackage[a4paper,margin=2.4cm]{geometry}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\title{La$_3$Ni$_2$O$_7$ RKKY }
+\author{}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{RKKY}
+
+非相互作用哈密顿量:
+\begin{equation}
+    H_0
+    =
+    \sum_{\mathbf k,\sigma}
+    c_{\mathbf k a\sigma}^{\dagger}
+    h_{ab}(\mathbf k)
+    c_{\mathbf k b\sigma}.
+\end{equation}
+
+
+局域磁矩与巡游电子之间的交换耦合可以写成
+\begin{equation}
+    H_K
+    =
+    J_K
+    \sum_i
+    \mathbf S_i \cdot \mathbf s_i,
+\end{equation}
+
+在 $J_K$ 较小的情况下，对 $H_K$ 做二阶微扰，可以得到有效的 RKKY 相互作用
+\begin{equation}
+    \Delta E^{(2)}
+    =
+    \sum_{n\neq 0}
+    \frac{
+        \left|
+        \langle n | H_K | 0 \rangle
+        \right|^2
+    }{
+        E_0-E_n
+    },
+\end{equation}
+\begin{equation}
+    \Delta E^{(2)}
+    =
+    -
+    J_K^2
+    \sum_{i,j}
+    \sum_{\alpha,\beta}
+    S_i^\alpha S_j^\beta
+    \sum_{n\neq 0}
+    \frac{
+        \langle 0 | s_i^\alpha | n \rangle
+        \langle n | s_j^\beta | 0 \rangle
+    }{
+        E_n-E_0
+    }.
+\end{equation}
+\begin{equation}
+    \chi_{ij}^{\alpha\beta}
+    =
+    \sum_{n\neq 0}
+    \frac{
+        \langle 0 | s_i^\alpha | n \rangle
+        \langle n | s_j^\beta | 0 \rangle
+    }{
+        E_n-E_0
+    }.
+\end{equation}
+\begin{equation}
+    H_{\mathrm{RKKY}}
+    =
+    \sum_{i,j}
+    J_{ij}^{\mathrm{RKKY}}
+    \,
+    \mathbf S_i \cdot \mathbf S_j .
+\end{equation}
+
+\begin{equation}
+    J_{ij}^{\mathrm{RKKY}}
+    \propto
+    -
+    J_K^2
+    \chi_{ij}^{s}.
+\end{equation}
+
+
+\begin{equation}
+    \chi^{0}_{ab;cd}(\mathbf q)
+    =
+    -
+    \frac{1}{N}
+    \sum_{\mathbf k}
+    \sum_{m,n}
+    u_{c m}(\mathbf k+\mathbf q)
+    u^{*}_{a m}(\mathbf k+\mathbf q)
+    u_{b n}(\mathbf k)
+    u^{*}_{d n}(\mathbf k)
+    \frac{
+        f[\varepsilon_m(\mathbf k+\mathbf q)-\mu]
+        -
+        f[\varepsilon_n(\mathbf k)-\mu]
+    }{
+        \varepsilon_m(\mathbf k+\mathbf q)
+        -
+        \varepsilon_n(\mathbf k)
+    }.
+    \label{eq:multi_orbital_chi}
+\end{equation}
+\begin{equation}
+    \chi^{0}_{ab;cd}(\mathbf R)
+    =
+    \frac{1}{N_q}
+    \sum_{\mathbf q}
+    e^{i\mathbf q\cdot \mathbf R}
+    \chi^{0}_{ab;cd}(\mathbf q).
+\end{equation}
+\end{document}

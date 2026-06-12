@@ -1,0 +1,23 @@
+# Julia
+*.ji
+*.cov
+*.mem
+.julia/
+
+# LaTeX build products
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.xdv
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+*~
+
+# Local backup manifests
+Manifest.toml.bak
+

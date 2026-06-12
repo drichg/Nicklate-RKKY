@@ -1,0 +1,405 @@
+\documentclass[UTF8,11pt]{ctexart}
+
+\usepackage[a4paper,margin=2.4cm]{geometry}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+citecolor=blue,
+urlcolor=blue
+}
+
+\title{La$_3$Ni$_2$O$_7$ RKKY }
+\author{}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{问题设定}
+
+考虑一个多轨道 itinerant electron 体系，其非相互作用或平均场有效哈密顿量写为
+\begin{equation}
+    H_0
+    ===
+    \sum_{\mathbf k,\sigma}
+    c_{\mathbf k a\sigma}^{\dagger}
+    h_{ab}(\mathbf k)
+    c_{\mathbf k b\sigma}.
+\end{equation}
+这里 $a,b$ 是内部自由度指标，可以同时包含轨道、层、子格点等自由度。例如对于双层两轨道模型，可以把
+\begin{equation}
+    a=(\ell,\alpha)
+\end{equation}
+理解为层指标 $\ell$ 与轨道指标 $\alpha$ 的组合。
+
+局域磁矩与 itinerant electrons 之间的交换耦合可以写成
+\begin{equation}
+    H_K
+    ===
+
+    J_K
+    \sum_i
+    \mathbf S_i \cdot \mathbf s_i,
+\end{equation}
+其中电子自旋密度为
+\begin{equation}
+    \mathbf s_i
+    ===========
+
+    \frac{1}{2}
+    \sum_{a,b}
+    c_{ia\sigma}^{\dagger}
+    \bm{\sigma}*{\sigma\sigma'}
+    \Lambda*{ab}
+    c_{ib\sigma'}.
+\end{equation}
+矩阵 $\Lambda$ 描述局域磁矩与轨道、层自由度之间的耦合方式。如果局域磁矩主要耦合到某一个轨道，则 $\Lambda$ 可以取为该轨道子空间上的投影矩阵。
+
+在 $J_K$ 较小的情况下，对 $H_K$ 做二阶微扰，可以得到有效的 RKKY 相互作用
+\begin{equation}
+    H_{\mathrm{RKKY}}
+    =================
+
+    \sum_{i,j}
+    J_{ij}^{\mathrm{RKKY}}
+    ,
+    \mathbf S_i \cdot \mathbf S_j .
+\end{equation}
+在没有自旋轨道耦合且体系保持自旋 SU(2) 对称性的情况下，RKKY 相互作用由静态自旋 susceptibility 决定：
+\begin{equation}
+    J_{ij}^{\mathrm{RKKY}}
+    \propto
+    -------
+
+    J_K^2
+    \chi_{ij}^{s}(\omega=0).
+\end{equation}
+需要注意的是，整体符号依赖于 $H_K$ 与有效 Heisenberg 模型的约定。如果采用
+\begin{equation}
+    H_{\mathrm{spin}}
+    =================
+
+    \sum_{i,j}
+    J_{ij}
+    \mathbf S_i \cdot \mathbf S_j ,
+\end{equation}
+则正的 $J_{ij}$ 通常表示反铁磁相互作用，负的 $J_{ij}$ 表示铁磁相互作用。因此在实际讨论中，需要明确代码输出的量是否已经包含 $-J_K^2$ 这一整体因子。
+
+\section{多轨道 bare susceptibility}
+
+多轨道体系中的 susceptibility 不是一个标量，而是一个四指标张量。定义广义密度算符
+\begin{equation}
+    \rho_{ab}(\mathbf q)
+    ====================
+
+    \sum_{\mathbf k,\sigma}
+    c_{\mathbf k+\mathbf q,a,\sigma}^{\dagger}
+    c_{\mathbf k,b,\sigma}.
+\end{equation}
+对应的 bare susceptibility 为
+\begin{equation}
+    \chi^{0}_{ab;cd}(\mathbf q,i\Omega_n)
+    =====================================
+
+    *
+
+    \frac{T}{N}
+    \sum_{\mathbf k,i\omega_m}
+    G_{ca}(\mathbf k+\mathbf q,i\omega_m+i\Omega_n)
+    G_{bd}(\mathbf k,i\omega_m).
+\end{equation}
+其中
+\begin{equation}
+    G(\mathbf k,i\omega_m)
+    ======================
+
+    \left[
+        i\omega_m+\mu-h(\mathbf k)
+        \right]^{-1}.
+\end{equation}
+这里 $a,b,c,d$ 均为轨道、层或子格点等内部自由度指标。该四指标张量描述了 particle-hole channel 中不同内部自由度之间的响应。
+
+将 $h(\mathbf k)$ 对角化：
+\begin{equation}
+    h(\mathbf k) u_n(\mathbf k)
+    ===========================
+
+    \varepsilon_n(\mathbf k) u_n(\mathbf k),
+\end{equation}
+格林函数可以写为
+\begin{equation}
+    G_{ab}(\mathbf k,i\omega_m)
+    ===========================
+
+    \sum_n
+    \frac{
+        u_{a n}(\mathbf k)
+        u^{*}*{b n}(\mathbf k)
+    }{
+        i\omega_m+\mu-\varepsilon_n(\mathbf k)
+    }.
+\end{equation}
+代入 Matsubara 求和后，静态极限下得到
+\begin{equation}
+    \chi^{0}*{ab;cd}(\mathbf q)
+    ===========================
+
+    *
+
+    \frac{1}{N}
+    \sum_{\mathbf k}
+    \sum_{m,n}
+    u_{c m}(\mathbf k+\mathbf q)
+    u^{*}*{a m}(\mathbf k+\mathbf q)
+    u*{b n}(\mathbf k)
+    u^{*}_{d n}(\mathbf k)
+    \frac{
+        f[\varepsilon_m(\mathbf k+\mathbf q)-\mu]
+        -----------------------------------------
+
+        f[\varepsilon_n(\mathbf k)-\mu]
+    }{
+        \varepsilon_m(\mathbf k+\mathbf q)
+        ----------------------------------
+
+        \varepsilon_n(\mathbf k)
+    }.
+    \label{eq:multi_orbital_chi}
+\end{equation}
+其中
+\begin{equation}
+    f(x)
+    ====
+
+    \frac{1}{e^{x/T}+1}
+\end{equation}
+是 Fermi 分布函数。当分母接近零时，需要使用有限温度形式或数值展宽来避免奇异性。
+
+\section{从 susceptibility 到实空间 RKKY}
+
+实空间 susceptibility 通过 Fourier 变换得到：
+\begin{equation}
+    \chi^{0}_{ab;cd}(\mathbf R)
+    ===========================
+
+    \frac{1}{N_q}
+    \sum_{\mathbf q}
+    e^{i\mathbf q\cdot \mathbf R}
+    \chi^{0}*{ab;cd}(\mathbf q).
+\end{equation}
+若局域磁矩 $i$ 和 $j$ 分别通过投影矩阵 $\Lambda^{(i)}$ 与 $\Lambda^{(j)}$ 耦合到电子自由度，则有效 RKKY 相互作用为
+\begin{equation}
+    J*{ij}^{\mathrm{RKKY}}
+    ======================
+
+    *
+
+    J_K^2
+    \sum_{a,b,c,d}
+    \Lambda^{(i)}*{ab}
+    ,
+    \chi^{0}*{ab;cd}(\mathbf R_i-\mathbf R_j)
+    ,
+    \Lambda^{(j)}_{cd}.
+    \label{eq:rkky_projection}
+\end{equation}
+这说明多轨道 RKKY 的核心步骤不是直接读取一个标量 $\chi(\mathbf R)$，而是先计算 orbital-resolved susceptibility，再根据局域磁矩的物理来源做轨道、层投影。
+
+如果局域磁矩只耦合到某些轨道，并且耦合矩阵近似为该子空间上的单位矩阵，则上式可以简化为对相应轨道和层指标求和。例如，若关注某一层内部的有效相互作用，可以取
+\begin{equation}
+    J_{\mathrm{intra}}(\mathbf R)
+    \propto
+    -------
+
+    J_K^2
+    \sum_{a\in \mathrm{layer}}
+    \sum_{b\in \mathrm{layer}}
+    \chi^{0}*{aa;bb}(\mathbf R).
+\end{equation}
+若关注上下层之间的有效相互作用，则可以取
+\begin{equation}
+    J*{\mathrm{inter}}(\mathbf R)
+    \propto
+    -------
+
+    J_K^2
+    \sum_{a\in \mathrm{top}}
+    \sum_{b\in \mathrm{bottom}}
+    \chi^{0}_{aa;bb}(\mathbf R).
+\end{equation}
+
+\section{与双层两轨道模型的对应}
+
+对于双层两轨道模型，可以将内部自由度排列为
+\begin{equation}
+    (1,2,3,4)
+    =========
+
+    (\mathrm{top},d_{x^2-y^2}),
+    (\mathrm{top},d_{z^2}),
+    (\mathrm{bottom},d_{x^2-y^2}),
+    (\mathrm{bottom},d_{z^2}).
+\end{equation}
+在这种约定下，上层自由度为 $1,2$，下层自由度为 $3,4$。
+
+当前计算中可以定义如下几个代表性 RKKY 相互作用：
+\begin{align}
+    J_0 & : \quad \mathbf R=(0,0), \quad \text{interlayer}, \
+    J_1 & : \quad \mathbf R=(1,0), \quad \text{intralayer}, \
+    J_2 & : \quad \mathbf R=(1,1), \quad \text{intralayer}, \
+    J_3 & : \quad \mathbf R=(2,0), \quad \text{intralayer}.
+\end{align}
+其中 $J_0$ 是同一个晶胞内上下层之间的有效交换，可以取为
+\begin{equation}
+    J_0
+    \sim
+    \sum_{a=1,2}
+    \sum_{b=3,4}
+    \chi_{ab}(\mathbf R=0).
+\end{equation}
+层内相互作用可以取为
+\begin{equation}
+    J_n
+    \sim
+    \sum_{a=1,2}
+    \sum_{b=1,2}
+    \chi_{ab}(\mathbf R_n),
+\end{equation}
+其中
+\begin{equation}
+    \mathbf R_1=(1,0),\qquad
+    \mathbf R_2=(1,1),\qquad
+    \mathbf R_3=(2,0).
+\end{equation}
+这里的 $\sim$ 表示暂时没有写入整体因子 $-J_K^2$。如果只关心不同 $U$ 下的相对变化，可以暂时忽略该因子；如果要和有效 Heisenberg 模型中的 $J_1,J_2,J_3$ 做定量比较，则必须统一符号、单位和归一化。
+
+\section{相互作用重整化后的 RKKY}
+
+在 slave-spin 或其他平均场框架下，相互作用 $U$ 对 RKKY 的影响主要通过有效准粒子哈密顿量进入：
+\begin{equation}
+    h(\mathbf k)
+    \longrightarrow
+    h_{\mathrm{eff}}(\mathbf k;U).
+\end{equation}
+同时，化学势 $\mu$ 需要在每个 $U$ 下重新确定，使填充数满足
+\begin{equation}
+    n(\mu,U)=n_{\mathrm{target}}.
+\end{equation}
+因此 susceptibility 实际上是
+\begin{equation}
+    \chi^{0}(\mathbf q;U)
+    =====================
+
+    \chi^{0}
+    [
+        h_{\mathrm{eff}}(\mathbf k;U),
+        \mu(U),
+        T
+    ],
+\end{equation}
+对应的 RKKY 相互作用为
+\begin{equation}
+    J_n(U)
+    \propto
+    -------
+
+    J_K^2
+    \chi^{0}(\mathbf R_n;U).
+\end{equation}
+如果在某个 $U$ 附近，例如 $U\simeq 4$，观察到 $J_0,J_1,J_2,J_3$ 出现明显变化，则可能说明电子结构发生了显著重构。这种重构可能来自 Lifshitz transition、轨道选择性重整化、准粒子权重快速变化，或者某个能带接近 Fermi 能级导致 susceptibility 增强。
+
+\section{数值流程}
+
+实际计算可以按照如下步骤进行：
+
+\begin{enumerate}
+    \item 给定 $U$，构造有效多轨道哈密顿量
+          \begin{equation}
+              h_{\mathrm{eff}}(\mathbf k;U).
+          \end{equation}
+
+          ```
+    \item 调节化学势 $\mu$，使体系满足目标填充
+          \begin{equation}
+              n(\mu,U)=n_{\mathrm{target}}.
+          \end{equation}
+
+    \item 在 $N_k\times N_k$ 的 momentum mesh 上计算静态 bare susceptibility：
+          \begin{equation}
+              \chi^{0}_{ab;cd}(\mathbf q;U).
+          \end{equation}
+
+    \item 对 $\mathbf q$ 做 Fourier 变换，得到实空间 susceptibility：
+          \begin{equation}
+              \chi^{0}_{ab;cd}(\mathbf R;U).
+          \end{equation}
+
+    \item 对目标层、目标轨道和目标距离做投影，得到
+          \begin{equation}
+              J_0(U),\quad J_1(U),\quad J_2(U),\quad J_3(U).
+          \end{equation}
+
+    \item 保存结果：
+          \begin{equation}
+              \{U,J_0,J_1,J_2,J_3,\mu,n\}.
+          \end{equation}
+          ```
+
+\end{enumerate}
+
+其中 $\mu(U)$ 和 $n(U)$ 是重要的诊断量。如果 $J_n(U)$ 在某个 $U$ 附近发生突变，需要同时检查化学势、填充数、费米面结构以及 orbital-resolved density of states。
+
+\section{需要检查的数值问题}
+
+首先，需要确认 susceptibility 的符号约定。不同代码中 $\chi$ 的定义可能相差一个负号。如果最终目标是讨论有效 Heisenberg 相互作用，应明确
+\begin{equation}
+    H_{\mathrm{RKKY}}
+    =================
+
+    \sum_{i,j}
+    J_{ij}^{\mathrm{eff}}
+    \mathbf S_i\cdot \mathbf S_j
+\end{equation}
+中的 $J_{ij}^{\mathrm{eff}}$ 与代码输出的 $\chi_{ij}$ 之间的关系。
+
+其次，需要确认轨道与层投影是否符合局域磁矩的物理来源。如果局域磁矩主要来自某个 Ni 轨道，则不应简单地对所有轨道等权求和，而应使用更合理的投影矩阵 $\Lambda$。
+
+第三，需要检查 $N_k$ 收敛性。RKKY 相互作用对 Fermi 面非常敏感，尤其在低温 $T=0.001$ 时，需要较密的 momentum mesh。可以比较
+\begin{equation}
+    N_k=50,\ 80,\ 100
+\end{equation}
+下的结果是否稳定。
+
+第四，需要检查温度展宽。若 $T$ 太小而 $N_k$ 不够密，susceptibility 可能出现数值噪声。可以比较
+\begin{equation}
+    T=0.001,\ 0.002,\ 0.005
+\end{equation}
+下的结果。
+
+第五，如果 $U\simeq 4$ 附近出现尖锐变化，需要判断其来源是真实物理机制还是数值不稳定。应重点检查：
+\begin{enumerate}
+    \item 化学势 $\mu(U)$ 是否连续；
+    \item 填充数 $n(U)$ 是否保持在目标填充附近；
+    \item Fermi 面是否发生拓扑变化；
+    \item orbital-resolved band structure 是否出现能带穿越；
+    \item 准粒子权重是否在该 $U$ 附近快速变化；
+    \item susceptibility 的 peak structure 是否发生重构。
+\end{enumerate}
+
+\section{总结}
+
+多轨道 RKKY 计算的核心是先计算 orbital-resolved 静态 susceptibility，
+\begin{equation}
+    \chi^{0}_{ab;cd}(\mathbf q),
+\end{equation}
+再 Fourier 变换到实空间，并根据局域磁矩与电子轨道、层自由度之间的耦合方式做投影。对于双层两轨道体系，层间与层内 RKKY 的区别本质上来自对不同 layer block 的 susceptibility 求和。
+
+相互作用 $U$ 的影响通过 slave-spin 重整化后的有效能带、准粒子权重和化学势进入。因此 $J_0,J_1,J_2,J_3$ 随 $U$ 的变化可以用来诊断 Fermi 面重构、轨道选择性以及磁交换路径的变化。
+
+\end{document}
