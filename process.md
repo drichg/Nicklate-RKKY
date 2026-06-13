@@ -27,3 +27,21 @@ in eV unless explicitly stated otherwise.
   - `N=60`: 14.2192 s per U.
 - The observed benchmark suggests that the 61-point `N=100` scan is feasible
   as a multi-hour resumable local calculation.
+- The production `Nk=Nq=100`, `U=0:0.1:6` scan completed all 61 points in
+  approximately 40 minutes and produced
+  `data/results/rkky_x2_bilayer_U0-6_Nk100.jld2`.
+- Production integrity diagnostics:
+  - maximum filling error: `9.8843e-11`;
+  - maximum intralayer symmetry residual: `9.8810e-15`;
+  - maximum interlayer symmetry residual: `1.2490e-16`;
+  - maximum Fourier imaginary residual: `1.4097e-15`.
+- Sunny 0.8.0 was added as a direct project dependency. This version has no
+  native eV unit, so exchange and frequency values are converted at the Sunny
+  boundary while all persisted and reported values remain in eV.
+- A real `U=0` initial 4x4 attempt minimized to a period-4 state with
+  antialigned layers and `E/N=-0.00437425` eV, but Sunny reported an unstable
+  mode near the magnetic Gamma point.
+- The full nine-attempt retry protocol at `U=0` remained unstable for five
+  4x4 seeds, two 6x6 seeds, and two 8x8 seeds. The lowest-energy 4x4 and 8x8
+  states agree to numerical precision and retain period-4 order; this point
+  requires physical interpretation after the full scan.
