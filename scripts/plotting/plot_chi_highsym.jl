@@ -19,12 +19,10 @@ function orbital_chi_value(chi, orbital)
 	name = normalize_orbital(orbital)
 
 	if name == "x2"
-		# return real(chi[1, 1] + chi[1, 3])
-		return real(chi[1, 1])
+		return real(chi[1, 1] + chi[1, 3])
 	end
 
-	# return real(chi[2, 2] + chi[2, 4])
-	return real(chi[2, 2])
+	return real(chi[2, 2] + chi[2, 4])
 end
 
 function orbital_label(orbital)

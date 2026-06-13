@@ -64,4 +64,18 @@ Get-ChildItem tests/test_*.jl | ForEach-Object {
 
 Sunny 当前未列入 `Project.toml`，因此
 `src/excitations/spin_excitation.jl` 不由主模块自动加载。
+# Nickelate RKKY
 
+## Bilayer x2 RKKY scan
+
+The production scan extracts `J0`, `J1`, `J2`, `J3`, and `J1p` in eV from
+the layer-resolved x2-y2 susceptibility:
+
+```powershell
+$env:JULIA_NUM_THREADS = "20"
+julia --project=. scripts/susceptibility/run_x2_bilayer_rkky.jl
+```
+
+The default `Nk=Nq=100` calculation contains 61 interaction values and is a
+long-running job. It writes an atomically replaceable, resumable result to
+`data/results/rkky_x2_bilayer_U0-6_Nk100.jld2`.
