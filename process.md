@@ -45,3 +45,35 @@ in eV unless explicitly stated otherwise.
   4x4 seeds, two 6x6 seeds, and two 8x8 seeds. The lowest-energy 4x4 and 8x8
   states agree to numerical precision and retain period-4 order; this point
   requires physical interpretation after the full scan.
+- Fixed a direct-script namespace bug found before production: the script
+  referenced `Sunny` from `Main` although the dependency was imported inside
+  `NickelateRKKY`. A regression-tested `sunny_runtime_version()` API now keeps
+  the script independent of that module-loading detail.
+- The formal Sunny scan completed all 61 U points and wrote
+  `data/results/sunny_bilayer_U0-6.jld2`. Every point remained classified as
+  `unstable_spin_wave` after the full retry protocol.
+- The selected finite-cell states are period-4 throughout the scan. Their
+  layer correlation changes from -1 for `U <= 0.9` eV to +1 for
+  `U >= 1.0` eV, locating the sampled transition in `0.9 < U < 1.0` eV.
+- Fifty-six of the 61 selected states did not trigger a Sunny minimizer
+  convergence warning. The repeated instability of converged states shows
+  that minimizer iteration count alone is not the dominant cause.
+- A continuous exchange-matrix minimization gives an incommensurate diagonal
+  ordering vector between approximately `(0.273, 0.273)` and
+  `(0.289, 0.289)` RLU. This is incompatible with the quarter-grid momenta of
+  a 4x4 cell and explains the near-Gamma negative-curvature modes reported by
+  Sunny. The interpretation is consistent with the incommensurate LSWT
+  treatment of Toth and Lake (2015) and Sunny's requirement that the supplied
+  magnetic structure be a true energy minimum.
+- RKKY convergence checks were run at `U = 0.0, 2.9, 3.0, 3.6, 6.0`.
+  The `Nk=80` versus 100 threshold triggered `Nk=120` diagnostics at
+  `U=0.0, 2.9, 3.6`. The 120-point values remain close to the 100-point
+  results; the largest relative sensitivities occur in exchange components
+  that are close to zero.
+- Generated 61 instability diagnostic images, four summary figures, a compact
+  report-data JLD2 file, and the five-page Chinese report
+  `paper/rkky_sunny_results.pdf`.
+- GitHub pushes were attempted after the first milestone. The sandboxed and
+  escalated execution environments reached GitHub but did not expose the SSH
+  identity accepted in the user's interactive PowerShell session, so local
+  commits remain the authoritative backup until the user runs `git push`.
