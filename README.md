@@ -79,3 +79,17 @@ julia --project=. scripts/susceptibility/run_x2_bilayer_rkky.jl
 The default `Nk=Nq=100` calculation contains 61 interaction values and is a
 long-running job. It writes an atomically replaceable, resumable result to
 `data/results/rkky_x2_bilayer_U0-6_Nk100.jld2`.
+
+## Sunny ground states and spin waves
+
+After the complete RKKY scan:
+
+```powershell
+julia --project=. scripts/sunny/run_bilayer_groundstate_spectrum.jl
+```
+
+The public inputs and outputs are in eV. Sunny 0.8 internally receives values
+converted to meV because that version does not provide a native eV unit.
+Results are resumed from `data/results/sunny_bilayer_U0-6.jld2`, and weighted
+dispersion or instability diagnostic images are written to
+`results/excitations`.

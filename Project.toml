@@ -1,3 +1,4 @@
 [deps]
 JLD2 = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
 Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+Sunny = "2b4a2ac8-8f8b-43e8-abf4-3cb0c45e8736"
