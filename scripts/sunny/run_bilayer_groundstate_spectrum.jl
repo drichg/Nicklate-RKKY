@@ -34,7 +34,7 @@ function run_default_sunny_bilayer()
     rkky_result = load_x2_rkky_result(config.input_path)
     rkky_result.completed_U_values == collect(0.0:0.1:6.0) ||
         error("default Sunny run requires the complete U=0:0.1:6 RKKY scan")
-    println("Sunny version: ", Base.pkgversion(Sunny))
+    println("Sunny version: ", sunny_runtime_version())
     println("Configuration: ", config)
     result = scan_sunny_bilayer(
         rkky_result;

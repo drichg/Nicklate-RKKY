@@ -93,3 +93,16 @@ converted to meV because that version does not provide a native eV unit.
 Results are resumed from `data/results/sunny_bilayer_U0-6.jld2`, and weighted
 dispersion or instability diagnostic images are written to
 `results/excitations`.
+
+## Result report
+
+Regenerate the summary figures and LaTeX source with:
+
+```powershell
+julia --project=. scripts/report/generate_rkky_sunny_report.jl
+cd paper
+xelatex -interaction=nonstopmode -halt-on-error rkky_sunny_results.tex
+xelatex -interaction=nonstopmode -halt-on-error rkky_sunny_results.tex
+```
+
+The compiled report is `paper/rkky_sunny_results.pdf`.

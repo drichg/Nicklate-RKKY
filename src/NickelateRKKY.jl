@@ -29,11 +29,13 @@ export save_x2_rkky_result_atomic, load_x2_rkky_result
 export scan_x2_bilayer_rkky
 export build_sunny_bilayer, minimize_sunny_bilayer
 export ground_state_structure_factor, classify_ground_state
+export classical_bilayer_minimum
 export sunny_bilayer_q_path, classify_sunny_exception, select_sunny_attempt
 export compute_sunny_bilayer_spectrum, classify_spin_wave
 export plot_sunny_bilayer_spectrum
 export compute_sunny_bilayer_attempt, run_sunny_point_with_retries
 export sunny_scan_metadata, save_sunny_result_atomic, load_sunny_result
 export scan_sunny_bilayer, plot_sunny_point
+export sunny_runtime_version
 
 end

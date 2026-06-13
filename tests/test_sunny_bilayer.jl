@@ -88,6 +88,25 @@ end
     ).phase == "period-4"
 end
 
+@testset "continuous classical exchange minimum" begin
+    ferromagnet = classical_bilayer_minimum(
+        (; J0 = 0.0, J1 = -1.0, J2 = 0.0, J3 = 0.0, J1p = 0.0);
+        grid_size = 101,
+    )
+    neel = classical_bilayer_minimum(
+        (; J0 = 0.0, J1 = 1.0, J2 = 0.0, J3 = 0.0, J1p = 0.0);
+        grid_size = 101,
+    )
+    period4 = classical_bilayer_minimum(
+        (; J0 = 1.0, J1 = 0.0, J2 = 0.0, J3 = 1.0, J1p = 0.0);
+        grid_size = 101,
+    )
+    @test ferromagnet.q_rlu[1:2] ≈ [0.0, 0.0] atol = 1e-12
+    @test neel.q_rlu[1:2] ≈ [0.5, 0.5] atol = 1e-12
+    @test period4.q_rlu[1:2] ≈ [0.25, 0.25] atol = 0.005
+    @test period4.layer_parity == -1
+end
+
 @testset "Sunny path and instability classification" begin
     model = build_sunny_bilayer(
         J0 = 0.001,
@@ -268,4 +287,5 @@ end
     @test config.n_q == 301
     @test endswith(config.input_path, "rkky_x2_bilayer_U0-6_Nk100.jld2")
     @test endswith(config.output_path, "sunny_bilayer_U0-6.jld2")
+    @test sunny_runtime_version() == "0.8.0"
 end

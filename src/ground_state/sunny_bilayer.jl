@@ -152,3 +152,33 @@ function classify_ground_state(spins::AbstractMatrix, dims::NTuple{3, Int})
         magnetization,
     )
 end
+
+function classical_bilayer_minimum(exchanges; grid_size::Integer = 501)
+    grid_size >= 3 || throw(ArgumentError("grid_size must be at least 3"))
+    best_energy = Inf
+    best_q = [0.0, 0.0, 0.0]
+    best_parity = -1
+    for ix in 0:(grid_size - 1), iy in 0:(grid_size - 1)
+        qx = pi * ix / (grid_size - 1)
+        qy = pi * iy / (grid_size - 1)
+        intra = 2exchanges.J1 * (cos(qx) + cos(qy)) +
+            4exchanges.J2 * cos(qx) * cos(qy) +
+            2exchanges.J3 * (cos(2qx) + cos(2qy))
+        inter = exchanges.J0 +
+            2exchanges.J1p * (cos(qx) + cos(qy))
+        for parity in (-1, 1)
+            candidate = intra + parity * inter
+            if candidate < best_energy
+                best_energy = candidate
+                best_q = [qx / (2pi), qy / (2pi), 0.0]
+                best_parity = parity
+            end
+        end
+    end
+    return (;
+        energy_coefficient_eV = best_energy,
+        q_rlu = best_q,
+        layer_parity = best_parity,
+        grid_size,
+    )
+end

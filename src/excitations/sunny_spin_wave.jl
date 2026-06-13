@@ -1,3 +1,5 @@
+sunny_runtime_version() = string(Base.pkgversion(Sunny))
+
 function sunny_bilayer_q_path(cryst; n_points::Integer = 301)
     n_points >= 4 || throw(ArgumentError("n_points must be at least 4"))
     vertices = [
@@ -271,7 +273,7 @@ function sunny_scan_metadata(
     )
     return (;
         schema_version = 1,
-        sunny_version = string(Base.pkgversion(Sunny)),
+        sunny_version = sunny_runtime_version(),
         public_energy_unit = "eV",
         sunny_internal_energy_unit = "meV",
         lattice_constants_angstrom = (3.85, 3.85, 20.0),

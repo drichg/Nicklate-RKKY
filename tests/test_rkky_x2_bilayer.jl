@@ -164,3 +164,21 @@ end
     @test config.JK == 1.0
     @test endswith(config.filepath, "rkky_x2_bilayer_U0-6_Nk100.jld2")
 end
+
+@testset "RKKY convergence script configuration" begin
+    script = joinpath(
+        @__DIR__,
+        "..",
+        "scripts",
+        "susceptibility",
+        "check_x2_rkky_convergence.jl",
+    )
+    @test isfile(script)
+    include(script)
+    config = default_x2_convergence_config()
+    @test config.U_values == [0.0, 2.9, 3.0, 3.6, 6.0]
+    @test config.base_grid == 80
+    @test config.reference_grid == 100
+    @test config.diagnostic_grid == 120
+    @test config.relative_tolerance == 0.05
+end
