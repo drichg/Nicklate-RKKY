@@ -73,7 +73,8 @@ in eV unless explicitly stated otherwise.
 - Generated 61 instability diagnostic images, four summary figures, a compact
   report-data JLD2 file, and the five-page Chinese report
   `paper/rkky_sunny_results.pdf`.
-- GitHub pushes were attempted after the first milestone. The sandboxed and
-  escalated execution environments reached GitHub but did not expose the SSH
-  identity accepted in the user's interactive PowerShell session, so local
-  commits remain the authoritative backup until the user runs `git push`.
+- Early GitHub pushes failed because the execution environment did not inherit
+  the SSH identity used by the interactive PowerShell session. The final push
+  succeeded after explicitly setting `HOME`, the SSH config path, and
+  `id_ed25519`. Branch `codex/rkky-sunny-workflow` now tracks
+  `origin/codex/rkky-sunny-workflow`.
